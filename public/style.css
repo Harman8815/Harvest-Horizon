@@ -1,0 +1,209 @@
+
+  /*************************************** home **************************************/
+  
+  /* ******************************************************************************* */
+  .main {
+    padding: 15vh 0;
+    background-color: var(--aboutbackground);
+    overflow: hidden;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 80%;
+  
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 10px 10px 30px #c3c6ce, -10px -10px 30px #ffffff;
+        padding: 5vh 5vw;
+        margin-bottom: 30px;
+      }
+  
+      .profile-pic {
+        border-radius: 50%;
+        border: 8px solid #007bff;
+        width: 250px;
+        height: 250px;
+      }
+  
+      .box1 {
+        .left {
+          float: left;
+          width: 30%;
+        }
+  
+        .right {
+          float: right;
+          width: 65%;
+          padding-left: 20px;
+  
+          p {
+            margin: 10px 0;
+  
+            strong {
+              font-weight: bold;
+            }
+          }
+  
+          ul {
+            list-style-type: none;
+            padding: 0;
+  
+            li {
+              padding: 5px 0;
+            }
+          }
+          #farming-techniques {
+            display: flex;
+            li {
+              background-color: #007bff;
+              color: white;
+              border-radius: 2rem;
+              padding: 5px 10px;
+              margin: 5px 10px;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+  
+      hr {
+        border: 1px solid #ccc;
+        margin: 20px 0;
+      }
+  
+      .box2 {
+        display: flex;
+  
+        .left {
+          width: 70%;
+        }
+  
+        .right {
+          width: 30%;
+        }
+      }
+  
+      .godown {
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+  
+      /* Additional Styles for Social Media */
+      .box3 {
+        display: flex;
+        justify-content: space-between;
+  
+        .left,
+        .right {
+          width: 45%;
+        }
+  
+        canvas {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+  #pieChart {
+    width: 100%;
+    max-height: 350px;
+  }
+  #customChart {
+    width: 100%;
+    max-height: 100px;
+  }
+  #yearlyFieldMap {
+    display: grid;
+    grid-template-columns: repeat(31, 1fr);
+    gap: 2px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 3.7vw;
+  }
+  
+  .month-container {
+    display: flex;
+  }
+  
+  .month {
+    display: flex;
+    flex-direction: column; /* Stack days vertically */
+    align-items: center; /* Center align month name */
+    margin: 10px; /* Space between months */
+  }
+  
+  .contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 15px);
+    grid-template-rows: repeat(7, 20px);
+     /* Space between squares */
+    margin: 5px 0; /* Space between grid and month name */
+    align-items: start; /* Align items at the start */
+  }
+  
+  .contribution-square {
+    width: 14px; /* Adjust size as needed */
+    height: 14px; /* Adjust size as needed */
+    background-color: #ebedf0; /* Default color for empty field */
+    border-radius: 3px;
+  }
+  
+  /* Adding classes for different crop types */
+  .contribution-square.summer {
+    background-color: blue;
+  } /* Summer crops */
+  .contribution-square.vegetable {
+    background-color: red;
+  } /* Vegetables */
+  .contribution-square.winter {
+    background-color: rgb(3, 209, 3);
+  } /* Winter crops */
+  .contribution-square.empty {
+    background-color: white;
+  } /* Empty fields */
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Adjust as needed */
+    font-family: Arial, sans-serif; /* Optional */
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .color-box {
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    border: 1px solid #ccc; /* Optional border */
+    margin-right: 8px; /* Space between box and text */
+  }
+  
+  /* ******************************************************************************* */
+  
+  footer {
+    position: relative;
+    background-color: #ffffff00;
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+  }
+  

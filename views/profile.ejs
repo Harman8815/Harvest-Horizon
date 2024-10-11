@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agro Website</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    /* .home-section {
+  background-image: url("/home.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+
+    body::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Opera */
+    }
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      color: #ffffff !important;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-left: 1rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0dfd24 !important;
+    }
+    .form{
+        width: 40%;
+        form > div{
+            width: 80%;
+            margin: 3vh auto;
+        }
+        margin-bottom: 3rem;
+    }
+.button-last{
+        margin:2rem 0
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <!-- Website Name (Left) -->
+        <a class="navbar-brand h1" href="#">Harvest Horizon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <!-- Navbar Links (Right) -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/crops">Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#contactus">Contact-Us</a>
+            </li>
+            <!-- Profile Icon (Right End) -->
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/profile">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="main" data-aos="fade-in">
+      <div class="container">
+        <div class="box1">
+          <div class="left">
+            <img
+              src="./image.jpg"
+              alt="Farmer's Image"
+              class="profile-pic"
+              id="farmer-image"
+            />
+            <h1 id="farmer-name">Ramesh Kumar</h1>
+            <h2>
+              Occupation:
+              <span id="farmer-occupation" style="color: blueviolet"
+                >Farmer</span
+              >
+            </h2>
+
+            <h3>Social Media</h3>
+            <p>
+              <strong>Facebook:</strong>
+              <a href="https://facebook.com/ramesh.farmer" target="_blank"
+                >ramesh.farmer</a
+              >
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a
+                href="https://instagram.com/ramesh_kumar_farming"
+                target="_blank"
+                >ramesh_kumar_farming</a
+              >
+            </p>
+          </div>
+          <div class="right">
+            <p>
+              <strong>About:</strong>
+              <span id="farmer-about"
+                >Ramesh is a progressive farmer from Punjab, India, specializing
+                in sustainable agriculture. He grows wheat, rice, and seasonal
+                vegetables using organic farming methods. With 15 years of
+                experience, he helps fellow farmers adopt eco-friendly
+                techniques.</span
+              >
+            </p>
+            <p>
+              <strong>Contact:</strong>
+              <span id="farmer-contact">+91 9876543210</span>
+            </p>
+            <p>
+              <strong>Location:</strong>
+              <span id="farmer-location">Amritsar, Punjab</span>
+            </p>
+            <p>
+              <strong>Experience:</strong>
+              <span id="farmer-experience"
+                >15 years in Sustainable Agriculture</span
+              >
+            </p>
+            <!-- Added Sections Here -->
+            <p><strong>Yield from Previous Year:</strong></p>
+            <ul id="previous-yield">
+              <li>Summer - Wheat: 500 quintals/acre (Organic)</li>
+              <li>Winter - Rice: 400 quintals/acre (Organic)</li>
+              <li>
+                Summer - Seasonal Vegetables: 200 quintals/acre (Mixed cropping)
+              </li>
+            </ul>
+
+            <p><strong>Farming Techniques:</strong></p>
+            <ul id="farming-techniques">
+              <li>Crop rotation</li>
+              <li>Drip irrigation</li>
+              <li>Composting</li>
+              <li>Soil testing</li>
+              <li>Biofertilizers</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="box2">
+          <div class="left">
+            <h3>Crop Status</h3>
+            <form id="crop-status-form">
+              <ul>
+                <li class="soil-preparation">
+                  <label>
+                    <input type="checkbox" id="soilPreparation" /> Soil
+                    Preparation
+                  </label>
+                </li>
+                <li class="sowing">
+                  <label> <input type="checkbox" id="sowing" /> Sowing </label>
+                </li>
+                <li class="irrigation">
+                  <label>
+                    <input type="checkbox" id="irrigation" /> Irrigation
+                  </label>
+                </li>
+                <li class="fertilizing">
+                  <label>
+                    <input type="checkbox" id="fertilizing" /> Fertilizing
+                  </label>
+                </li>
+                <li class="pest-control">
+                  <label>
+                    <input type="checkbox" id="pestControl" /> Pest Control
+                  </label>
+                </li>
+                <li class="weed-management">
+                  <label>
+                    <input type="checkbox" id="weedManagement" /> Weed
+                    Management
+                  </label>
+                </li>
+                <li class="harvesting">
+                  <label>
+                    <input type="checkbox" id="harvesting" /> Harvesting
+                  </label>
+                </li>
+                <li class="post-harvest-processing">
+                  <label>
+                    <input type="checkbox" id="postHarvestProcessing" />
+                    Post-Harvest Processing
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="right">
+            <div class="godown">
+              <h3>Godown Inventory</h3>
+              <p>
+                Fertilizer:
+                <span id="fertilizer" contenteditable="true">500</span> kg
+              </p>
+              <p>
+                Pesticides:
+                <span id="pesticides" contenteditable="true">200</span> kg
+              </p>
+              <p>
+                Seeds: <span id="seeds" contenteditable="true">100</span> kg
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="box3">
+          <div class="left">
+            <h1>Land Wise Crop Distribution</h1>
+            <canvas id="pieChart"></canvas>
+          </div>
+          <div class="right">
+            <canvas id="customChart"></canvas>
+          </div>
+        </div>
+        <div class="box4">
+            <h1>HashMap for 365 Days of the year</h1>
+          <div id="yearlyFieldMap" class="hashmap">
+            <div class="month-container">
+              <div class="month" id="january">
+                <div class="contribution-grid" data-month="1"></div>
+                <span>January</span>
+              </div>
+              <div class="month" id="february">
+                <div class="contribution-grid" data-month="2"></div>
+                <span>February</span>
+              </div>
+              <div class="month" id="march">
+                <div class="contribution-grid" data-month="3"></div>
+                <span>March</span>
+              </div>
+              <div class="month" id="april">
+                <div class="contribution-grid" data-month="4"></div>
+                <span>April</span>
+              </div>
+              <div class="month" id="may">
+                <div class="contribution-grid" data-month="5"></div>
+                <span>May</span>
+              </div>
+              <div class="month" id="june">
+                <div class="contribution-grid" data-month="6"></div>
+                <span>June</span>
+              </div>
+              <div class="month" id="july">
+                <div class="contribution-grid" data-month="7"></div>
+                <span>July</span>
+              </div>
+              <div class="month" id="august">
+                <div class="contribution-grid" data-month="8"></div>
+                <span>August</span>
+              </div>
+              <div class="month" id="september">
+                <div class="contribution-grid" data-month="9"></div>
+                <span>September</span>
+              </div>
+              <div class="month" id="october">
+                <div class="contribution-grid" data-month="10"></div>
+                <span>October</span>
+              </div>
+              <div class="month" id="november">
+                <div class="contribution-grid" data-month="11"></div>
+                <span>November</span>
+              </div>
+              <div class="month" id="december">
+                <div class="contribution-grid" data-month="12"></div>
+                <span>December</span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="legend">
+            <div class="legend-item">
+              <div class="color-box" style="background-color: white;"></div>
+              <span>Empty Field</span>
+            </div>
+            <div class="legend-item">
+              <div class="color-box" style="background-color: blue;"></div>
+              <span> Vegetable Crop</span>
+            </div>
+            <div class="legend-item">
+              <div class="color-box" style="background-color: red;"></div>
+              <span>Winter Crop (Wheat)</span>
+            </div>
+            <div class="legend-item">
+              <div class="color-box" style="background-color: rgb(3, 220, 3);"></div>
+              <span>Summer Crop (Rice)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- Go Back Button Section -->
+ <div class="d-flex justify-content-center mt-4 button-last">
+    <button type="button" class="btn btn-primary">
+      <a href="/" class="text-white text-decoration-none">Go Back!!</a>
+    </button>
+  </div>
+     <!-- Footer Section -->
+     <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+          <p>&copy; 2024 Website Name. All rights reserved.</p>
+          <p>
+            <a href="#" class="text-white">Privacy Policy</a> |
+            <a href="#" class="text-white">Terms of Service</a>
+          </p>
+        </div>
+      </footer>
+  </body>
+
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"
+    integrity="sha512-7DgGWBKHddtgZ9Cgu8aGfJXvgcVv4SWSESomRtghob4k4orCBUTSRQ4s5SaC2Rz+OptMqNk0aHHsaUBk6fzIXw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("data.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              "Network response was not ok " + response.statusText
+            );
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // Populate farmer information
+          document.getElementById("farmer-image").src = data.farmer.image;
+          document.getElementById("farmer-name").textContent = data.farmer.name;
+          document.getElementById("farmer-occupation").textContent =
+            data.farmer.occupation;
+          document.getElementById("farmer-about").textContent =
+            data.farmer.about;
+          document.getElementById("farmer-contact").textContent =
+            data.farmer.contact;
+          document.getElementById("farmer-location").textContent =
+            data.farmer.location;
+
+          // Populate crop status
+          document.getElementById("soilPreparation").checked =
+            data.cropStatus.soilPreparation;
+          document.getElementById("sowing").checked = data.cropStatus.sowing;
+          document.getElementById("irrigation").checked =
+            data.cropStatus.irrigation;
+          document.getElementById("fertilizing").checked =
+            data.cropStatus.fertilizing;
+          document.getElementById("pestControl").checked =
+            data.cropStatus.pestControl;
+          document.getElementById("weedManagement").checked =
+            data.cropStatus.weedManagement;
+          document.getElementById("harvesting").checked =
+            data.cropStatus.harvesting;
+          document.getElementById("postHarvestProcessing").checked =
+            data.cropStatus.postHarvestProcessing;
+
+          // Populate godown information
+          document.getElementById("fertilizer").textContent =
+            data.godown.fertilizer;
+          document.getElementById("pesticides").textContent =
+            data.godown.pesticides;
+          document.getElementById("seeds").textContent = data.godown.seeds;
+
+          // Populate yield from Previous Year
+          const yieldList = document.getElementById("previous-yield");
+          data.farmer.yield.forEach((item) => {
+            const li = document.createElement("li");
+            li.innerText = `${item.season} - ${item.name}: ${item.production} (${item.method})`;
+            yieldList.appendChild(li);
+          });
+
+          // Farming Techniques
+          const techniquesList = document.getElementById("farming-techniques");
+          data.farmer.techniques.forEach((technique) => {
+            const li = document.createElement("li");
+            li.innerText = technique;
+            techniquesList.appendChild(li);
+          });
+
+          // Create a HashMap for 365 days
+          const yearlyFieldMap = document.getElementById("yearlyFieldMap");
+          yearlyFieldMap.style.display = "grid";
+          yearlyFieldMap.style.gridTemplateColumns = "repeat(31, 1fr)"; // Assuming a month of max 31 days
+          yearlyFieldMap.style.gridGap = "2px";
+
+          const crops = data.farmer.yearlyCropDistribution; // Assume data is like ['wheat', 'vegetable', 'empty', 'winter_crop', ...]
+
+          crops.forEach((crop, index) => {
+            const dayDiv = document.createElement("div");
+            dayDiv.style.width = "10px";
+            dayDiv.style.height = "10px";
+
+            // Set background color based on the crop type
+            switch (crop) {
+              case "wheat":
+                dayDiv.style.backgroundColor = "green";
+                break;
+              case "vegetables":
+                dayDiv.style.backgroundColor = "blue";
+                break;
+              case "empty":
+                dayDiv.style.backgroundColor = "white";
+                break;
+              case "winter_crop":
+                dayDiv.style.backgroundColor = "brown";
+                break;
+              default:
+                dayDiv.style.backgroundColor = "gray";
+                break;
+            }
+
+            yearlyFieldMap.appendChild(dayDiv);
+          });
+        })
+        .catch((error) => console.log("Error loading JSON:", error));
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Pie Chart for crop area distribution
+      const ctxPie = document.getElementById("pieChart").getContext("2d");
+      const pieChart = new Chart(ctxPie, {
+        type: "pie",
+        data: {
+          labels: ["Wheat", "Vegetables", "Staples for Cattle"],
+          datasets: [
+            {
+              data: [70, 20, 10],
+              backgroundColor: ["#FFCE56", "#36A2EB", "#FF6384"],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function (tooltipItem) {
+                  const data = tooltipItem.dataset.data[tooltipItem.dataIndex];
+                  let label = tooltipItem.label || "";
+                  if (label) {
+                    label += ": ";
+                  }
+                  label += `${data}% area`;
+                  return label;
+                },
+              },
+            },
+          },
+        },
+      });
+      // Custom Chart on the right (You can use this to represent other information like production trends)
+      const ctxCustom = document.getElementById("customChart").getContext("2d");
+      const customChart = new Chart(ctxCustom, {
+        type: "bar", // Example: Bar chart, you can change this to other chart types (line, radar, etc.)
+        data: {
+          labels: ["Crop A", "Crop B", "Crop C"], // Customize labels here
+          datasets: [
+            {
+              label: "Production Amount",
+              data: [300, 200, 100],
+              backgroundColor: "#42A5F5",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // Create a HashMap for 365 days
+      const yearlyFieldMap = document.getElementById("yearlyFieldMap");
+      yearlyFieldMap.style.display = "grid";
+      yearlyFieldMap.style.gridTemplateColumns = "repeat(31, 1fr)"; // Assuming a month of max 31 days
+      yearlyFieldMap.style.gridGap = "2px";
+
+      const crops = data.farmer.yearlyCropDistribution; // Assume data is like ['wheat', 'vegetable', 'empty', 'winter_crop', ...]
+
+      crops.forEach((crop, index) => {
+        const dayDiv = document.createElement("div");
+        dayDiv.style.width = "10px";
+        dayDiv.style.height = "10px";
+
+        // Set background color based on the crop type
+        switch (crop) {
+          case "wheat":
+            dayDiv.style.backgroundColor = "green";
+            break;
+          case "vegetables":
+            dayDiv.style.backgroundColor = "blue";
+            break;
+          case "empty":
+            dayDiv.style.backgroundColor = "white";
+            break;
+          case "winter_crop":
+            dayDiv.style.backgroundColor = "brown";
+            break;
+          default:
+            dayDiv.style.backgroundColor = "gray";
+            break;
+        }
+
+        yearlyFieldMap.appendChild(dayDiv);
+      });
+    });
+
+    function animateInNav() {
+      gsap.set(".navigation li", { opacity: 1 });
+      gsap.from(".navigation li", {
+        X: "+=100",
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power4.out",
+      });
+    }
+
+    function animateOutNav() {
+      gsap.set(".navigation li", { opacity: 1 });
+      gsap.to(".navigation li", {
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power4.out",
+      });
+    }
+    const animation = gsap.from(".main", {
+      opacity: 0,
+      x: -150,
+      duration: 1.2,
+      paused: true,
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animation.play();
+        } else {
+          gsap.set(".main", { x: -150 });
+          animation.reverse();
+        }
+      });
+    });
+
+    observer.observe(document.querySelector(".data"));
+    AOS.init({
+      offset: 160,
+      delay: 0,
+      duration: 1000,
+      easing: "ease",
+      once: false,
+      mirror: true,
+      anchorPlacement: "top-bottom",
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const contributions = {
+  0: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], // January - Wheat
+  1: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], // February - Wheat
+  2: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], // March - Wheat
+  3: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], // April - Vegetables
+  4: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], // May - Empty
+  5: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], // June - Rice
+  6: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], // July - Rice
+  7: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], // August - Rice
+  8: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], // September - Rice
+  9: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], // October - Rice
+  10: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], // November - Wheat
+  11: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]  // December - Wheat
+};
+
+
+      const monthGrids = document.querySelectorAll(".contribution-grid");
+
+      monthGrids.forEach((grid, monthIndex) => {
+        const monthData = contributions[monthIndex];
+        const daysInMonth = monthData.length;
+
+        // Populate the grid with staggered filling
+        for (let i = 0; i < daysInMonth; i++) {
+          const square = document.createElement("div");
+          square.className = "contribution-square";
+
+          // Set class based on contribution type
+          if (monthData[i] === 1) {
+            square.classList.add("summer"); // Example condition for summer crops
+          } else if (monthData[i] === 2) {
+            square.classList.add("vegetable"); // Example condition for vegetables
+          } else if (monthData[i] === 3) {
+            square.classList.add("winter"); // Example condition for vegetables
+          } else  {
+            square.classList.add("empty"); // Empty fields
+          }
+
+          // Append to the correct position in the grid
+          const row = Math.floor(i / 7);
+          const column = i % 7;
+
+          // Calculate the staggered row index
+          const staggeredRow = row % 2 === 0 ? row : row + 1; // Shift odd rows down by one
+          const staggeredIndex = staggeredRow * 7 + column;
+
+          grid.appendChild(square);
+        }
+      });
+    });
+  </script>
+  
+</html>

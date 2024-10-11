@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crops Data</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    body::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Opera */
+    }
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important;
+      color: #ffffff !important;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-left: 1rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0dfd24 !important;
+    }
+    /* Fixing image aspect ratio */
+.crop-image {
+    object-fit: cover; /* Ensures the images fill the container without distorting */
+    height: 200px; /* Fixed height for uniform image sizes */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adding margin to the top of the section */
+.section1 {
+    margin-top: 50px;
+}
+
+.button-last{
+        margin:2rem 0
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <!-- Website Name (Left) -->
+        <a class="navbar-brand h1" href="#">Harvest Horizon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <!-- Navbar Links (Right) -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/crops">Crops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="/#contactus">Contact-Us</a>
+            </li>
+            <!-- Profile Icon (Right End) -->
+            <li class="nav-item">
+              <a class="nav-link h5 px-3" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="section1">
+        <div class="container mt-5"> <!-- Added margin from top -->
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/rice.webp" class="card-img-top crop-image" alt="Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Rice</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/maize.webp" class="card-img-top crop-image" alt="Maize">
+                        <div class="card-body">
+                            <h5 class="card-title">Maize</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/chickpea.webp" class="card-img-top crop-image" alt="Chickpea">
+                        <div class="card-body">
+                            <h5 class="card-title">Chickpea</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/kidneybeans.webp" class="card-img-top crop-image" alt="Kidneybeans">
+                        <div class="card-body">
+                            <h5 class="card-title">Kidneybeans</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Second Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/pigeonpeas.jpg" class="card-img-top crop-image" alt="Pigeonpeas">
+                        <div class="card-body">
+                            <h5 class="card-title">Pigeonpeas</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/mungbeans.webp" class="card-img-top crop-image" alt="Mungbean">
+                        <div class="card-body">
+                            <h5 class="card-title">Mungbean</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/blackgram.webp" class="card-img-top crop-image" alt="Blackgram">
+                        <div class="card-body">
+                            <h5 class="card-title">Blackgram</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/lentil.webp" class="card-img-top crop-image" alt="Lentil">
+                        <div class="card-body">
+                            <h5 class="card-title">Lentil</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Third Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/pomegranate.webp" class="card-img-top crop-image" alt="Pomegranate">
+                        <div class="card-body">
+                            <h5 class="card-title">Pomegranate</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/banana.webp" class="card-img-top crop-image" alt="Banana">
+                        <div class="card-body">
+                            <h5 class="card-title">Banana</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/mango.webp" class="card-img-top crop-image" alt="Mango">
+                        <div class="card-body">
+                            <h5 class="card-title">Mango</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/grapes.webp" class="card-img-top crop-image" alt="Grapes">
+                        <div class="card-body">
+                            <h5 class="card-title">Grapes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Fourth Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/watermelon.webp" class="card-img-top crop-image" alt="Watermelon">
+                        <div class="card-body">
+                            <h5 class="card-title">Watermelon</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/muskmelon.webp" class="card-img-top crop-image" alt="Muskmelon">
+                        <div class="card-body">
+                            <h5 class="card-title">Muskmelon</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/apple.webp" class="card-img-top crop-image" alt="Apple">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/orange.jpg" class="card-img-top crop-image" alt="Orange">
+                        <div class="card-body">
+                            <h5 class="card-title">Orange</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Fifth Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/papaya.webp" class="card-img-top crop-image" alt="Papaya">
+                        <div class="card-body">
+                            <h5 class="card-title">Papaya</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/coconut.webp" class="card-img-top crop-image" alt="Coconut">
+                        <div class="card-body">
+                            <h5 class="card-title">Coconut</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/cotton.webp" class="card-img-top crop-image" alt="Cotton">
+                        <div class="card-body">
+                            <h5 class="card-title">Cotton</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/jute.jpg" class="card-img-top crop-image" alt="Jute">
+                        <div class="card-body">
+                            <h5 class="card-title">Jute</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Sixth Row -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/coffee.webp" class="card-img-top crop-image" alt="Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Coffee</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Go Back Button Section -->
+<div class="d-flex justify-content-center mt-4 button-last">
+    <button type="button" class="btn btn-primary">
+      <a href="/" class="text-white text-decoration-none">Go Back!!</a>
+    </button>
+  </div>
+        
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Website Name. All rights reserved.</p>
+        <p>
+          <a href="#" class="text-white">Privacy Policy</a> |
+          <a href="#" class="text-white">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const items = document.querySelectorAll(".card");
+
+        items.forEach((item) => {
+          item.addEventListener("click", () => {
+            const crop = item
+              .querySelector(".card-title")
+              .textContent.toLowerCase();
+            window.location.href = `cropInfo?crop=${crop}`;
+          });
+        });
+      });
+    </script>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

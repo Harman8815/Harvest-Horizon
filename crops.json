@@ -248,7 +248,7 @@
             }
         },
         {
-            "name": "Kidney Beans",
+            "name": "KidneyBeans",
             "image": "/kidneybeans.webp",
             "description": "Kidney beans are a type of legume known for their kidney-like shape and rich nutritional value. They are popular in cuisines worldwide, especially in soups, stews, and salads.",
             "type": "Kharif Crop",
@@ -307,7 +307,7 @@
             }
         },
         {
-            "name": "Pigeon Peas",
+            "name": "PigeonPeas",
             "image": "/pigeonpeas.jpg",
             "description": "Pigeon peas, also known as tuvar dal or arhar dal, are leguminous crops widely grown in tropical and subtropical regions. They are valued for their protein-rich seeds and culinary versatility.",
             "type": "Kharif Crop",
@@ -366,7 +366,7 @@
             }
         },
         {
-            "name": "Moth Beans",
+            "name": "MothBeans",
             "image": "/mothbeans.webp",
             "description": "Moth beans, also known as matki or Turkish gram, are a pulse crop grown primarily in arid and semi-arid regions. They are known for their drought tolerance and nutritional benefits.",
             "type": "Kharif Crop",
@@ -419,7 +419,7 @@
             }
         },
         {
-            "name": "Mung Beans",
+            "name": "MungBeans",
             "image": "/mungbeans.webp",
             "description": "Mung beans, also known as green gram or golden gram, are a legume crop cultivated for their edible seeds. They are widely grown in Asia and other tropical regions.",
             "type": "Kharif Crop",
@@ -472,7 +472,7 @@
             }
         },
         {
-            "name": "Black Gram",
+            "name": "BlackGram",
             "image": "/blackgram.webp",
             "description": "Black gram, also known as urad bean, is a widely cultivated pulse crop. It is known for its rich protein content and is an essential ingredient in many South Asian cuisines.",
             "type": "Kharif Crop",

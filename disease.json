@@ -1,0 +1,1227 @@
+{
+    "disease": [
+        {
+            "name": "Apple_scab",
+            "disease_name": "Apple Scab",
+            "causal_organism": "Venturia inaequalis (fungus)",
+            "symptoms": [
+                "Dark, olive-green lesions on upper surface of leaves",
+                "Black lesions on fruits and stems",
+                "Premature leaf drop",
+                "Deformed fruits"
+            ],
+            "host_crops": [
+                "Apple",
+                "Crabapple"
+            ],
+            "disease_cycle": "Apple scab overwinters in fallen leaves and infected fruit. In spring, the fungus releases spores that are carried by wind and rain to infect new growth.",
+            "environmental_conditions": [
+                "Cool, wet conditions (15-20°C)",
+                "High humidity"
+            ],
+            "transmission": "Spread by wind, rain, and infected plant material (leaves, fruits)",
+            "impact": "Can significantly reduce fruit quality, leading to crop loss and reduced market value.",
+            "management_strategies": [
+                "Fungicide application (preventative and curative)",
+                "Pruning infected plant parts",
+                "Remove fallen leaves and infected fruit",
+                "Use resistant apple varieties"
+            ],
+            "prevention_tips": [
+                "Plant resistant varieties",
+                "Proper spacing of plants for good air circulation",
+                "Avoid overhead irrigation"
+            ],
+            "geographic_distribution": "Common in temperate regions worldwide.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., captan, chlorothalonil)",
+                "Cultural practices such as leaf removal and sanitation"
+            ],
+            "economic_importance": "Apple scab is a major issue in apple production, affecting yield and fruit quality, leading to economic losses in apple farming."
+        },
+        {
+            "name": "Cedar_apple_rust",
+            "disease_name": "Cedar Apple Rust",
+            "causal_organism": "Gymnosporangium juniperivirginianae (fungus)",
+            "symptoms": [
+                "Yellow-orange lesions on leaves, with raised, spore-producing structures",
+                "Deformed and spotted fruits",
+                "Premature leaf drop"
+            ],
+            "host_crops": [
+                "Apple",
+                "Crabapple"
+            ],
+            "disease_cycle": "Cedar apple rust has a two-host cycle: it alternates between apple trees and cedar trees. Spores from cedar trees infect apple leaves in spring, then produce new spores that infect the cedar trees.",
+            "environmental_conditions": [
+                "Wet spring and summer conditions",
+                "Moderate temperatures (20-24°C)"
+            ],
+            "transmission": "Spores are carried by wind and rain between apple and cedar trees.",
+            "impact": "Can reduce photosynthesis, weaken the tree, and decrease fruit quality, leading to lower yields.",
+            "management_strategies": [
+                "Fungicide applications",
+                "Pruning infected parts of trees",
+                "Removing nearby cedar trees (if possible)"
+            ],
+            "prevention_tips": [
+                "Plant resistant apple varieties",
+                "Maintain good tree spacing",
+                "Monitor and remove nearby cedar trees"
+            ],
+            "geographic_distribution": "Widely distributed in temperate regions with both apple and cedar trees.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., myclobutanil, captan)",
+                "Prune infected parts of the tree"
+            ],
+            "economic_importance": "Cedar apple rust can significantly impact apple orchards, particularly in areas where both apple and cedar trees are prevalent."
+        },
+        {
+            "name": "Healthy",
+            "disease_name": "Healthy Apple",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal growth and fruit development"
+            ],
+            "host_crops": [
+                "Apple"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions (adequate water, sunlight, and soil fertility)"
+            ],
+            "transmission": "N/A",
+            "impact": "Optimal growth with healthy yields and high-quality fruit.",
+            "management_strategies": [
+                "Proper care, including irrigation, pest control, and disease prevention"
+            ],
+            "prevention_tips": [
+                "Maintain good orchard hygiene",
+                "Properly manage irrigation and fertilization"
+            ],
+            "geographic_distribution": "Found in areas with proper agricultural practices and conditions for healthy apple trees.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy apple production contributes to high-quality fruit, resulting in a strong marketable yield."
+        },
+        {
+            "name": "Blueberry_healthy",
+            "disease_name": "Healthy Blueberry",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal growth and fruit development"
+            ],
+            "host_crops": [
+                "Blueberry"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Optimal growing conditions (adequate moisture, acidic soil, and proper sunlight)"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy plants produce high-quality fruits with good yields.",
+            "management_strategies": [
+                "Proper care including fertilization, irrigation, and pest control"
+            ],
+            "prevention_tips": [
+                "Maintain good field hygiene",
+                "Properly manage irrigation and soil pH"
+            ],
+            "geographic_distribution": "Common in areas with suitable climate and soil for blueberry cultivation.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy blueberries contribute to a profitable crop, with high-quality yields."
+        },
+        {
+            "name": "Powdery_mildew",
+            "disease_name": "Powdery Mildew",
+            "causal_organism": "Podosphaera clandestina (fungus)",
+            "symptoms": [
+                "White, powdery fungal growth on leaves, stems, and flowers",
+                "Leaf distortion and curling",
+                "Premature leaf drop"
+            ],
+            "host_crops": [
+                "Cherry (including sour cherry)",
+                "Peach",
+                "Plum"
+            ],
+            "disease_cycle": "Powdery mildew overwinters on infected plant material and spreads in spring through wind-blown spores, which infect new growth.",
+            "environmental_conditions": [
+                "Warm, dry conditions with high humidity"
+            ],
+            "transmission": "Spread by wind, rain, and insect activity.",
+            "impact": "Can reduce photosynthesis, stunt growth, and affect fruit quality.",
+            "management_strategies": [
+                "Fungicide application (e.g., sulfur, myclobutanil)",
+                "Pruning infected plant material",
+                "Avoid overhead irrigation"
+            ],
+            "prevention_tips": [
+                "Use resistant varieties",
+                "Ensure good air circulation around plants"
+            ],
+            "geographic_distribution": "Widely distributed in temperate climates where host crops are grown.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., tebuconazole, sulfur)",
+                "Cultural control such as pruning and proper spacing"
+            ],
+            "economic_importance": "Powdery mildew can cause significant yield loss in susceptible crops, reducing fruit quality and marketability."
+        },
+        {
+            "name": "Cherry_healthy",
+            "disease_name": "Healthy Cherry",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal growth, fruit set, and ripening"
+            ],
+            "host_crops": [
+                "Cherry (including sour cherry)"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions (adequate water, well-drained soil, and full sunlight)"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy cherry trees produce high-quality fruits with strong yields.",
+            "management_strategies": [
+                "Proper care including pruning, fertilization, and disease prevention"
+            ],
+            "prevention_tips": [
+                "Regularly monitor for pests and diseases",
+                "Ensure proper irrigation and soil management"
+            ],
+            "geographic_distribution": "Found in regions suitable for cherry production with temperate climates.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy cherry production results in high-quality fruit, supporting both local and international markets."
+        },
+        {
+            "name": "Cercospora_leaf_spot_Gray_leaf_spot",
+            "disease_name": "Cercospora Leaf Spot (Gray Leaf Spot)",
+            "causal_organism": "Cercospora zeae-maydis (fungus)",
+            "symptoms": [
+                "Large, circular lesions with gray centers and dark brown edges on leaves",
+                "Yellowing of the leaf tissue surrounding the lesions",
+                "Reduced leaf area leading to early senescence"
+            ],
+            "host_crops": [
+                "Corn (maize)"
+            ],
+            "disease_cycle": "The fungus overwinters in crop residue and spreads through wind and rain, infecting leaves during the growing season.",
+            "environmental_conditions": [
+                "Warm, humid conditions (25-30°C)"
+            ],
+            "transmission": "Spread by wind, rain, and movement of infected plant material.",
+            "impact": "Can lead to reduced photosynthesis, decreased plant vigor, and lower yields.",
+            "management_strategies": [
+                "Fungicide applications",
+                "Resistant hybrid varieties",
+                "Crop rotation to reduce inoculum buildup"
+            ],
+            "prevention_tips": [
+                "Plant resistant varieties",
+                "Proper field sanitation and removal of infected plant material"
+            ],
+            "geographic_distribution": "Common in areas where maize is grown, particularly in temperate and tropical regions.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., strobilurins, triazoles)",
+                "Field sanitation and use of resistant varieties"
+            ],
+            "economic_importance": "Cercospora leaf spot can reduce corn yields and quality, impacting both local and global maize markets."
+        },
+        {
+            "name": "Common_rust",
+            "disease_name": "Common Rust",
+            "causal_organism": "Puccinia sorghi (fungus)",
+            "symptoms": [
+                "Reddish-brown pustules on the upper side of leaves",
+                "Yellowing of tissue surrounding the pustules",
+                "Premature leaf senescence and reduced photosynthesis"
+            ],
+            "host_crops": [
+                "Corn (maize)"
+            ],
+            "disease_cycle": "Common rust overwinters on maize residue and spreads via wind-blown spores during the growing season.",
+            "environmental_conditions": [
+                "Warm temperatures (20-25°C)",
+                "Moderate humidity"
+            ],
+            "transmission": "Spread by wind-borne spores from infected crop residues and plants.",
+            "impact": "Decreases photosynthesis, leading to reduced plant growth and potential yield loss.",
+            "management_strategies": [
+                "Fungicide treatments",
+                "Use of resistant maize varieties",
+                "Proper crop rotation"
+            ],
+            "prevention_tips": [
+                "Use resistant hybrids",
+                "Maintain field sanitation by removing infected material"
+            ],
+            "geographic_distribution": "Widely distributed in maize-growing regions, particularly in temperate climates.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., tebuconazole, propiconazole)",
+                "Cultural practices such as crop rotation and sanitation"
+            ],
+            "economic_importance": "Common rust can cause yield reductions, particularly in high-density maize crops, affecting both local and global markets."
+        },
+        {
+            "name": "Northern_Leaf_Blight",
+            "disease_name": "Northern Leaf Blight",
+            "causal_organism": "Exserohilum turcicum (fungus)",
+            "symptoms": [
+                "Long, grayish-green lesions with darker edges on leaves",
+                "Lesions may coalesce, causing large areas of necrotic tissue",
+                "Premature leaf drop, leading to reduced photosynthesis"
+            ],
+            "host_crops": [
+                "Corn (maize)"
+            ],
+            "disease_cycle": "The fungus overwinters on infected crop debris and spreads through wind-borne spores during the growing season.",
+            "environmental_conditions": [
+                "Warm, humid conditions (20-30°C)",
+                "Frequent rainfall or high humidity"
+            ],
+            "transmission": "Spread by wind, rain, and infected plant material.",
+            "impact": "Reduces photosynthesis, weakens plants, and can cause significant yield loss, especially in susceptible varieties.",
+            "management_strategies": [
+                "Fungicide applications",
+                "Plant resistant varieties",
+                "Crop rotation to reduce pathogen buildup"
+            ],
+            "prevention_tips": [
+                "Practice good field sanitation",
+                "Use resistant hybrids",
+                "Ensure proper plant spacing to allow air circulation"
+            ],
+            "geographic_distribution": "Common in maize-growing regions, particularly in temperate areas with humid conditions.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., propiconazole, chlorothalonil)",
+                "Cultural control such as field sanitation and crop rotation"
+            ],
+            "economic_importance": "Northern leaf blight can lead to significant yield losses, especially in large-scale maize production, affecting crop profitability."
+        },
+        {
+            "name": "Corn_healthy",
+            "disease_name": "Healthy Corn",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal growth, good leaf development, and healthy kernels"
+            ],
+            "host_crops": [
+                "Corn (maize)"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions (adequate moisture, proper sunlight, and nutrient-rich soil)"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy corn yields high-quality, abundant crops.",
+            "management_strategies": [
+                "Proper care including fertilization, irrigation, and pest control"
+            ],
+            "prevention_tips": [
+                "Monitor for pests and diseases regularly",
+                "Ensure proper crop rotation and field sanitation"
+            ],
+            "geographic_distribution": "Found in regions with suitable growing conditions for maize.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy corn supports profitable maize farming, with good yield and marketable quality."
+        },
+        {
+            "name": "Black_rot",
+            "disease_name": "Black Rot",
+            "causal_organism": "Guignardia bidwellii (fungus)",
+            "symptoms": [
+                "Dark, sunken lesions on fruits and leaves",
+                "Wilting of vines and blackened leaf veins",
+                "Fruit decay and shriveling, with darkened tissue"
+            ],
+            "host_crops": [
+                "Grape"
+            ],
+            "disease_cycle": "The fungus overwinters in infected plant debris, and spores spread via wind and rain, infecting grapes during the growing season.",
+            "environmental_conditions": [
+                "Warm, humid conditions (25-30°C)",
+                "Frequent rainfall or dew"
+            ],
+            "transmission": "Spread by wind, rain, and infected plant material.",
+            "impact": "Reduces fruit quality, leading to shriveled, decayed grapes, and decreases overall yield.",
+            "management_strategies": [
+                "Fungicide application",
+                "Pruning and removal of infected plant parts",
+                "Use resistant grape varieties"
+            ],
+            "prevention_tips": [
+                "Ensure good air circulation around grapevines",
+                "Use drip irrigation to avoid wetting the foliage",
+                "Maintain field sanitation"
+            ],
+            "geographic_distribution": "Common in grape-growing regions worldwide, particularly in temperate climates.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., thiophanate-methyl, sulfur)",
+                "Cultural practices such as pruning and sanitation"
+            ],
+            "economic_importance": "Black rot is a significant threat to grape production, reducing both yield and the marketability of affected fruit."
+        },
+        {
+            "name": "Esca_Black_Measles",
+            "disease_name": "Esca (Black Measles)",
+            "causal_organism": "Phaeomoniella chlamydospora and other fungi",
+            "symptoms": [
+                "Chlorotic spots on leaves that later turn brown",
+                "Black streaks or lesions on fruit",
+                "Vine dieback, with premature leaf drop"
+            ],
+            "host_crops": [
+                "Grape"
+            ],
+            "disease_cycle": "Esca fungi infect grapevines via wounds, often caused by pruning, and can spread within the vine causing internal rot and wilting.",
+            "environmental_conditions": [
+                "Warm, dry conditions",
+                "Occurs during late summer to early fall"
+            ],
+            "transmission": "Spread through fungal spores carried by water and insects, primarily from infected plant material.",
+            "impact": "Can lead to significant vine death, reduced fruit yield, and poor wine quality.",
+            "management_strategies": [
+                "Prune and remove infected vine parts",
+                "Use resistant grape varieties",
+                "Ensure proper vineyard hygiene"
+            ],
+            "prevention_tips": [
+                "Avoid excessive pruning and use clean tools",
+                "Plant disease-resistant varieties"
+            ],
+            "geographic_distribution": "Common in temperate wine-growing regions, particularly in areas with high humidity.",
+            "treatment_or_cure": [
+                "There is no cure once infection occurs",
+                "Fungicide treatments may help control external symptoms"
+            ],
+            "economic_importance": "Esca can devastate grapevines and significantly affect the quality of wine, leading to economic losses in viticulture."
+        },
+        {
+            "name": "Leaf_blight_Isariopsis_Leaf_Spot",
+            "disease_name": "Leaf Blight (Isariopsis Leaf Spot)",
+            "causal_organism": "Isariopsis spp. (fungus)",
+            "symptoms": [
+                "Irregular brown to black spots on leaves",
+                "Yellowing around the spots",
+                "Defoliation, weakening the plant"
+            ],
+            "host_crops": [
+                "Grape"
+            ],
+            "disease_cycle": "The fungus overwinters on infected plant debris, and spores spread via wind and rain, infecting new leaves during the growing season.",
+            "environmental_conditions": [
+                "Warm, humid conditions",
+                "Wet periods followed by dry spells"
+            ],
+            "transmission": "Spread by wind, rain, and infected plant material.",
+            "impact": "Causes leaf loss, reducing photosynthesis and weakening the plant, leading to lower grape yields.",
+            "management_strategies": [
+                "Fungicide applications",
+                "Prune and remove infected plant material",
+                "Maintain vineyard sanitation"
+            ],
+            "prevention_tips": [
+                "Use resistant grape varieties",
+                "Ensure proper vineyard spacing for good air circulation"
+            ],
+            "geographic_distribution": "Found in grape-growing regions worldwide, especially in humid temperate areas.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., copper-based, sulfur-based)",
+                "Pruning and sanitation of infected parts"
+            ],
+            "economic_importance": "Leaf blight reduces yield and quality of grapes, impacting both production and the wine industry."
+        },
+        {
+            "name": "Grape_healthy",
+            "disease_name": "Healthy Grape",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal vine growth and fruit development"
+            ],
+            "host_crops": [
+                "Grape"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal conditions for growth (well-drained soil, proper irrigation, and sunlight)"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy grapevines yield high-quality fruits for fresh consumption or wine production.",
+            "management_strategies": [
+                "Proper care including pest control, disease management, and irrigation"
+            ],
+            "prevention_tips": [
+                "Regular monitoring for pests and diseases",
+                "Prune and remove dead wood"
+            ],
+            "geographic_distribution": "Found in regions with favorable growing conditions for grapevines.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy grape production is essential for both fresh market sales and wine industry profitability."
+        },
+        {
+            "name": "Haunglongbing_Citrus_greening",
+            "disease_name": "Huanglongbing (Citrus Greening)",
+            "causal_organism": "Candidatus Liberibacter asiaticus (bacterium)",
+            "symptoms": [
+                "Yellowing of leaves, starting from the edges and moving inward",
+                "Mottled, asymmetrical fruit with poor color development",
+                "Premature fruit drop",
+                "Twisted or deformed leaves and branches"
+            ],
+            "host_crops": [
+                "Orange",
+                "Other citrus varieties (lemons, limes, grapefruits)"
+            ],
+            "disease_cycle": "The bacteria are spread by infected psyllids (insects), which transmit the pathogen during feeding. The bacterium infects the tree’s vascular system, leading to nutrient deficiencies.",
+            "environmental_conditions": [
+                "Warm, humid conditions favor psyllid development and bacterial transmission."
+            ],
+            "transmission": "Spread by the Asian citrus psyllid and possibly other insect vectors.",
+            "impact": "Significant yield loss, fruit drop, reduced fruit quality, and eventual tree death.",
+            "management_strategies": [
+                "Vector control using insecticides or biological agents",
+                "Removal of infected trees",
+                "Use of resistant or tolerant citrus varieties"
+            ],
+            "prevention_tips": [
+                "Monitor for psyllid populations",
+                "Prune and remove infected plant material promptly"
+            ],
+            "geographic_distribution": "Found in citrus-growing regions worldwide, with a particular impact in subtropical and tropical areas.",
+            "treatment_or_cure": "No effective cure; management involves controlling the vector and removing infected trees.",
+            "economic_importance": "Huanglongbing is a major threat to global citrus production, significantly affecting yield and quality, especially in regions like Florida and Brazil."
+        },
+        {
+            "name": "Bacterial_spot_Peach",
+            "disease_name": "Bacterial Spot",
+            "causal_organism": "Xanthomonas campestris pv. pruni (bacterium)",
+            "symptoms": [
+                "Water-soaked spots on leaves that turn yellow and may fall out",
+                "Brown lesions on fruit with a characteristic sunken, wrinkled appearance",
+                "Premature leaf drop, leading to reduced photosynthesis"
+            ],
+            "host_crops": [
+                "Peach",
+                "Plum",
+                "Apricot"
+            ],
+            "disease_cycle": "Bacteria overwinter in plant debris and spread via water droplets, wind, and insects. The infection occurs primarily during wet conditions when the bacteria are splashed onto the plant surfaces.",
+            "environmental_conditions": [
+                "Warm and wet conditions favor bacterial growth and spread."
+            ],
+            "transmission": "Spread through water droplets, wind, and direct contact with infected plant material.",
+            "impact": "Decreases fruit quality and yield, causes defoliation, and weakens the plant, leading to reduced vigor.",
+            "management_strategies": [
+                "Copper-based bactericides",
+                "Pruning and removal of infected plant material",
+                "Use of resistant peach varieties"
+            ],
+            "prevention_tips": [
+                "Avoid overhead irrigation to reduce bacterial spread",
+                "Practice good field sanitation"
+            ],
+            "geographic_distribution": "Common in temperate climates where peaches and related crops are grown, especially in areas with regular rainfall.",
+            "treatment_or_cure": [
+                "Bactericides (e.g., copper hydroxide)",
+                "Cultural practices like pruning and removing infected parts"
+            ],
+            "economic_importance": "Bacterial spot is a significant issue for peach and stone fruit production, leading to yield losses and reduced fruit marketability."
+        },
+        {
+            "name": "Peach_healthy",
+            "disease_name": "Healthy Peach",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Normal leaf development, flowering, and fruit growth"
+            ],
+            "host_crops": [
+                "Peach"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Optimal growing conditions with adequate irrigation, good soil, and sunlight"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy peach trees produce high-quality fruits with good yields.",
+            "management_strategies": [
+                "Proper care, pest control, and regular monitoring for diseases"
+            ],
+            "prevention_tips": [
+                "Ensure good field sanitation and proper pruning techniques",
+                "Regularly check for pests and diseases"
+            ],
+            "geographic_distribution": "Common in regions suitable for peach cultivation, such as temperate climates.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy peach production supports strong local and international markets for fresh peaches and processed products."
+        },
+        {
+            "name": "Bacterial_spot_Pepper_bell",
+            "disease_name": "Bacterial Spot (Pepper, Bell)",
+            "causal_organism": "Xanthomonas campestris pv. vesicatoria (bacterium)",
+            "symptoms": [
+                "Water-soaked lesions on leaves, which later turn yellow and necrotic",
+                "Lesions on fruit with raised, dark spots that may become sunken",
+                "Leaf drop, stunted growth, and reduced fruit quality"
+            ],
+            "host_crops": [
+                "Pepper (bell pepper)",
+                "Tomato"
+            ],
+            "disease_cycle": "The bacterium overwinters in plant debris and can spread through wind, rain, and contact with infected tools or human activity.",
+            "environmental_conditions": [
+                "Warm, humid conditions promote bacterial growth and spread."
+            ],
+            "transmission": "Spread through infected seeds, plant material, water droplets, and contaminated equipment.",
+            "impact": "Reduces fruit quality, causes premature fruit drop, and lowers yield.",
+            "management_strategies": [
+                "Application of bactericides (e.g., copper-based products)",
+                "Crop rotation with non-host crops",
+                "Use of resistant pepper varieties"
+            ],
+            "prevention_tips": [
+                "Sanitize tools and equipment",
+                "Avoid overhead irrigation and wetting of plant foliage"
+            ],
+            "geographic_distribution": "Common in pepper-growing regions, especially in areas with high rainfall and humidity.",
+            "treatment_or_cure": [
+                "Bactericides (e.g., copper hydroxide, streptomycin)",
+                "Cultural control such as crop rotation and sanitation"
+            ],
+            "economic_importance": "Bacterial spot can reduce yields and fruit quality in bell pepper production, affecting market prices."
+        },
+        {
+            "name": "Pepper_bell_healthy",
+            "disease_name": "Healthy Pepper (Bell)",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Healthy plant growth with vibrant green leaves and strong fruit development"
+            ],
+            "host_crops": [
+                "Pepper (bell)"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions with proper sunlight, irrigation, and soil nutrition"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy bell pepper plants produce high-quality fruits with good yield.",
+            "management_strategies": [
+                "Proper care, pest control, and disease monitoring"
+            ],
+            "prevention_tips": [
+                "Ensure proper field sanitation",
+                "Monitor regularly for pests and diseases"
+            ],
+            "geographic_distribution": "Common in temperate regions where peppers are grown.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy pepper production supports strong marketable crops in both local and international markets."
+        },
+        {
+            "name": "Potato_Early_blight",
+            "disease_name": "Early Blight",
+            "causal_organism": "Alternaria solani (fungus)",
+            "symptoms": [
+                "Dark, concentric rings on older leaves",
+                "Lesions with a yellow halo, starting on the lower leaves",
+                "Early leaf drop leading to reduced photosynthesis and yield"
+            ],
+            "host_crops": [
+                "Potato",
+                "Tomato"
+            ],
+            "disease_cycle": "The fungus overwinters on infected plant debris and spreads through windborne spores, infecting the lower leaves first during warm, humid conditions.",
+            "environmental_conditions": [
+                "Warm, humid conditions (18-25°C)",
+                "Frequent rainfall or high humidity promote disease spread"
+            ],
+            "transmission": "Spread by wind, rain, and infected plant debris.",
+            "impact": "Reduces photosynthesis, weakens the plant, and can significantly reduce yield and tuber quality.",
+            "management_strategies": [
+                "Application of fungicides",
+                "Crop rotation with non-solanaceous crops",
+                "Use resistant potato varieties"
+            ],
+            "prevention_tips": [
+                "Ensure proper field sanitation and remove infected plant material",
+                "Use drip irrigation to avoid wetting leaves"
+            ],
+            "geographic_distribution": "Found in potato-growing regions worldwide, particularly in areas with warm, humid climates.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., chlorothalonil, mancozeb)",
+                "Cultural control such as crop rotation and sanitation"
+            ],
+            "economic_importance": "Early blight can cause substantial yield losses in potatoes, especially in humid conditions, affecting crop quality and marketability."
+        },
+        {
+            "name": "Potato_Late_blight",
+            "disease_name": "Late Blight",
+            "causal_organism": "Phytophthora infestans (oomycete)",
+            "symptoms": [
+                "Large, dark, water-soaked lesions on leaves",
+                "White fungal growth on the underside of affected leaves",
+                "Rapid spread of infection, leading to premature defoliation",
+                "Rotting of tubers, especially in humid conditions"
+            ],
+            "host_crops": [
+                "Potato",
+                "Tomato"
+            ],
+            "disease_cycle": "The pathogen overwinters in infected tubers and plant debris. Spores are spread by wind and water, infecting new plants during cool, wet conditions.",
+            "environmental_conditions": [
+                "Cool, wet conditions (10-20°C) favor disease development.",
+                "Heavy rainfall or dew accelerates disease spread."
+            ],
+            "transmission": "Spread by windborne spores and water splashing from infected plant material.",
+            "impact": "Can cause complete crop loss if not managed; significantly reduces yield, tuber quality, and marketability.",
+            "management_strategies": [
+                "Frequent fungicide applications",
+                "Use of resistant potato varieties",
+                "Remove infected plant material promptly"
+            ],
+            "prevention_tips": [
+                "Practice crop rotation with non-solanaceous crops",
+                "Use drip irrigation to keep foliage dry",
+                "Ensure good air circulation between plants"
+            ],
+            "geographic_distribution": "Common in temperate and subtropical potato-growing regions, especially where frequent rain and cool temperatures occur.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., mefenoxam, metalaxyl)",
+                "Cultural control such as early planting, removing infected material"
+            ],
+            "economic_importance": "Late blight is one of the most destructive diseases in potatoes, capable of wiping out entire crops, leading to significant financial losses in both commercial and subsistence farming."
+        },
+        {
+            "name": "Potato_healthy",
+            "disease_name": "Healthy Potato",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Healthy leaves, strong stems, and good tuber development"
+            ],
+            "host_crops": [
+                "Potato"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions with proper soil fertility, irrigation, and sunlight"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy potatoes yield high-quality tubers with good marketability.",
+            "management_strategies": [
+                "Regular pest and disease monitoring",
+                "Proper crop management and irrigation"
+            ],
+            "prevention_tips": [
+                "Ensure good field sanitation",
+                "Use resistant potato varieties"
+            ],
+            "geographic_distribution": "Common in regions suitable for potato cultivation, such as temperate and subtropical areas.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy potato production supports both local and global markets, contributing significantly to food security and agricultural economies."
+        },
+        {
+            "name": "Raspberry_healthy",
+            "disease_name": "Healthy Raspberry",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Healthy cane growth with vibrant green leaves and strong fruit production"
+            ],
+            "host_crops": [
+                "Raspberry"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Ideal growing conditions with well-drained soil, proper irrigation, and sunlight"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy raspberry plants produce high-quality fruit with good yield.",
+            "management_strategies": [
+                "Proper care and pest control, along with regular monitoring for diseases"
+            ],
+            "prevention_tips": [
+                "Practice good field sanitation",
+                "Check regularly for pests and diseases"
+            ],
+            "geographic_distribution": "Common in temperate regions where raspberries are grown.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy raspberry production supports the fresh market and value-added products like jams and juices."
+        },
+        {
+            "name": "Soybean_healthy",
+            "disease_name": "Healthy Soybean",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Healthy plant growth with green leaves, strong stems, and good pod development"
+            ],
+            "host_crops": [
+                "Soybean"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Optimal growing conditions with proper soil nutrients, sunlight, and water"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy soybeans yield high-quality beans with good marketability.",
+            "management_strategies": [
+                "Regular pest and disease monitoring",
+                "Proper crop management and irrigation"
+            ],
+            "prevention_tips": [
+                "Ensure good field sanitation",
+                "Use resistant soybean varieties"
+            ],
+            "geographic_distribution": "Common in regions suitable for soybean cultivation, such as temperate and subtropical areas.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy soybean production supports both local and global markets for oil, protein, and food products."
+        },
+        {
+            "name": "Squash_Powdery_mildew",
+            "disease_name": "Powdery Mildew (Squash)",
+            "causal_organism": "Podosphaera xanthii (fungus)",
+            "symptoms": [
+                "White, powdery fungal growth on the tops of leaves",
+                "Yellowing and distortion of infected leaves",
+                "Premature leaf drop, affecting photosynthesis and plant health"
+            ],
+            "host_crops": [
+                "Squash",
+                "Cucumbers",
+                "Melons"
+            ],
+            "disease_cycle": "The fungus spreads through airborne spores and thrives in dry conditions. Infected plants release spores that are dispersed by wind, leading to new infections.",
+            "environmental_conditions": [
+                "Dry, warm conditions (20-30°C)",
+                "High humidity favors fungal growth, especially in crowded plantings"
+            ],
+            "transmission": "Spread through windborne spores, water droplets, and infected plant debris.",
+            "impact": "Reduces yield by causing leaf damage and stunted growth, resulting in lower fruit quality.",
+            "management_strategies": [
+                "Application of fungicides (e.g., sulfur, potassium bicarbonate)",
+                "Remove infected plant material",
+                "Use of resistant squash varieties"
+            ],
+            "prevention_tips": [
+                "Space plants adequately for good air circulation",
+                "Avoid overhead irrigation that wets leaves"
+            ],
+            "geographic_distribution": "Common in warm regions where squashes and other cucurbits are grown.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., azoxystrobin, sulfur)",
+                "Cultural control such as crop rotation and spacing"
+            ],
+            "economic_importance": "Powdery mildew can significantly reduce squash yield, affecting market prices and production."
+        },
+        {
+            "name": "Strawberry_Leaf_scorch",
+            "disease_name": "Leaf Scorch (Strawberry)",
+            "causal_organism": "Multiple causes including environmental stress and fungal pathogens",
+            "symptoms": [
+                "Brown, dry edges and tips of leaves",
+                "Reduced photosynthesis and stunted plant growth",
+                "Leaf curling and premature leaf drop"
+            ],
+            "host_crops": [
+                "Strawberry"
+            ],
+            "disease_cycle": "Leaf scorch can be caused by a variety of factors including heat stress, drought, and fungal infections. It often exacerbates during periods of high temperatures and low humidity.",
+            "environmental_conditions": [
+                "Hot, dry conditions and poor irrigation practices favor leaf scorch"
+            ],
+            "transmission": "N/A",
+            "impact": "Reduces plant vigor, quality of fruit, and overall yield.",
+            "management_strategies": [
+                "Maintain consistent irrigation",
+                "Use mulches to retain moisture and reduce heat stress",
+                "Remove affected plant material"
+            ],
+            "prevention_tips": [
+                "Water deeply and evenly to avoid drought stress",
+                "Ensure proper spacing between plants to reduce heat buildup"
+            ],
+            "geographic_distribution": "Found in regions with hot, dry climates and in areas with inconsistent irrigation.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Leaf scorch can cause yield loss and poor fruit quality, affecting profitability in strawberry production."
+        },
+        {
+            "name": "Strawberry_healthy",
+            "disease_name": "Healthy Strawberry",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Healthy leaf development, flowering, and fruit growth"
+            ],
+            "host_crops": [
+                "Strawberry"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Optimal growing conditions with adequate irrigation, sunlight, and well-drained soil"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy strawberry plants produce high-quality berries with good yield.",
+            "management_strategies": [
+                "Proper care, pest control, and disease monitoring"
+            ],
+            "prevention_tips": [
+                "Ensure good field sanitation",
+                "Check regularly for pests and diseases"
+            ],
+            "geographic_distribution": "Common in temperate regions where strawberries are grown.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy strawberry production supports both fresh market and value-added products like jams and frozen strawberries."
+        },
+        {
+            "name": "Tomato_Bacterial_spot",
+            "disease_name": "Bacterial Spot (Tomato)",
+            "causal_organism": "Xanthomonas campestris pv. vesicatoria (bacterium)",
+            "symptoms": [
+                "Water-soaked lesions that turn dark brown or black",
+                "Spots with yellow halos on leaves and fruit",
+                "Premature leaf drop and reduced fruit size and quality"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The bacterium survives in infected plant debris and is spread by rain, wind, and infected tools or workers. The disease primarily affects tomatoes during wet conditions.",
+            "environmental_conditions": [
+                "Warm, wet conditions favor bacterial growth and spread."
+            ],
+            "transmission": "Spread through infected seeds, plant material, water droplets, and contaminated equipment.",
+            "impact": "Reduces yield, fruit quality, and overall plant health.",
+            "management_strategies": [
+                "Application of copper-based bactericides",
+                "Pruning and removing infected plant material",
+                "Crop rotation and use of resistant tomato varieties"
+            ],
+            "prevention_tips": [
+                "Avoid overhead irrigation",
+                "Practice good field sanitation and clean tools regularly"
+            ],
+            "geographic_distribution": "Common in tomato-growing regions worldwide, especially in areas with frequent rainfall and humidity.",
+            "treatment_or_cure": [
+                "Bactericides (e.g., copper hydroxide)",
+                "Cultural control like removing infected material"
+            ],
+            "economic_importance": "Bacterial spot can lead to significant yield loss and poor fruit quality in tomatoes, affecting both fresh and processed markets."
+        },
+        {
+            "name": "Tomato_Early_blight",
+            "disease_name": "Early Blight (Tomato)",
+            "causal_organism": "Alternaria solani (fungus)",
+            "symptoms": [
+                "Dark, concentric rings on older leaves",
+                "Lesions with yellow halos",
+                "Premature leaf drop, leading to reduced photosynthesis and yield"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The fungus survives in infected plant debris and spreads through airborne spores, infecting older leaves first during warm, humid conditions.",
+            "environmental_conditions": [
+                "Warm, humid conditions (18-25°C)",
+                "Frequent rain or high humidity promotes disease spread."
+            ],
+            "transmission": "Spread by wind, rain, and infected plant debris.",
+            "impact": "Reduces photosynthesis and weakens the plant, leading to reduced yield and poor fruit quality.",
+            "management_strategies": [
+                "Application of fungicides (e.g., chlorothalonil, mancozeb)",
+                "Crop rotation with non-solanaceous crops",
+                "Remove infected plant debris"
+            ],
+            "prevention_tips": [
+                "Ensure good air circulation between plants",
+                "Use resistant tomato varieties"
+            ],
+            "geographic_distribution": "Common in tomato-growing regions worldwide, especially in areas with warm, humid conditions.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., copper-based fungicides, chlorothalonil)",
+                "Cultural control such as crop rotation"
+            ],
+            "economic_importance": "Early blight can significantly reduce tomato yield, especially in humid conditions, affecting both fresh and processed markets."
+        },
+        {
+            "name": "Tomato_Late_blight",
+            "disease_name": "Late Blight (Tomato)",
+            "causal_organism": "Phytophthora infestans (oomycete)",
+            "symptoms": [
+                "Large, dark, water-soaked lesions on leaves",
+                "White fungal growth on the undersides of affected leaves",
+                "Rapid defoliation, affecting plant health",
+                "Rotting of fruit, especially in damp, cool conditions"
+            ],
+            "host_crops": [
+                "Tomato",
+                "Potato"
+            ],
+            "disease_cycle": "The pathogen overwinters in infected plant material and spreads through windborne spores. It infects leaves and fruit during cool, wet conditions.",
+            "environmental_conditions": [
+                "Cool, wet conditions (10-20°C)",
+                "Heavy rainfall or humidity accelerates disease spread."
+            ],
+            "transmission": "Spread by windborne spores and water droplets.",
+            "impact": "Late blight can destroy entire crops, resulting in complete yield loss and poor fruit quality.",
+            "management_strategies": [
+                "Frequent fungicide applications",
+                "Use resistant tomato varieties",
+                "Remove infected plant material"
+            ],
+            "prevention_tips": [
+                "Water at the base of plants to avoid wetting foliage",
+                "Ensure proper spacing for good air circulation"
+            ],
+            "geographic_distribution": "Common in regions with cool, wet climates where tomatoes are grown.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., mefenoxam, metalaxyl)",
+                "Cultural controls like removing infected plants"
+            ],
+            "economic_importance": "Late blight is one of the most destructive diseases for tomatoes, especially in cool, wet climates, causing major yield and quality losses."
+        },
+        {
+            "name": "Tomato_Leaf_Mold",
+            "disease_name": "Leaf Mold (Tomato)",
+            "causal_organism": "Passalora fulva (fungus)",
+            "symptoms": [
+                "Yellow to brown spots on the upper surface of leaves",
+                "White fungal growth on the underside of leaves",
+                "Reduced photosynthesis and weak plants"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The fungus spreads through wind, rain, and contaminated equipment, thriving in humid, warm conditions. It primarily infects the leaves.",
+            "environmental_conditions": [
+                "High humidity and temperatures between 20-24°C",
+                "Dense planting and overhead irrigation favor the disease."
+            ],
+            "transmission": "Spread by windborne spores, water, and contaminated tools.",
+            "impact": "Weakens plants and reduces fruit size and quality.",
+            "management_strategies": [
+                "Use of fungicides (e.g., copper fungicide)",
+                "Ensure good air circulation around plants",
+                "Remove and destroy infected leaves"
+            ],
+            "prevention_tips": [
+                "Space plants adequately to reduce humidity",
+                "Use drip irrigation to avoid wetting foliage"
+            ],
+            "geographic_distribution": "Found in tomato-growing regions with humid, warm conditions.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., sulfur, copper-based fungicides)",
+                "Cultural control like removing infected leaves"
+            ],
+            "economic_importance": "Leaf mold can cause yield loss by reducing photosynthesis and weakening plants, especially in high-density tomato production."
+        },
+        {
+            "name": "Tomato_Septoria_leaf_spot",
+            "disease_name": "Septoria Leaf Spot (Tomato)",
+            "causal_organism": "Septoria lycopersici (fungus)",
+            "symptoms": [
+                "Small, water-soaked lesions on older leaves",
+                "Brown spots with dark edges, eventually causing leaf drop",
+                "Reduced photosynthesis and plant vigor"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The fungus survives in infected plant debris and spreads through rain, irrigation, and contaminated tools.",
+            "environmental_conditions": [
+                "Warm, wet conditions (20-28°C)",
+                "Frequent rain or irrigation can increase disease spread."
+            ],
+            "transmission": "Spread by rain, wind, and contaminated plant material.",
+            "impact": "Reduces photosynthesis, weakens plants, and decreases fruit quality and yield.",
+            "management_strategies": [
+                "Use of fungicides (e.g., chlorothalonil, mancozeb)",
+                "Crop rotation and sanitation to remove infected debris",
+                "Remove infected leaves promptly"
+            ],
+            "prevention_tips": [
+                "Water at the base of plants to prevent wetting foliage",
+                "Practice crop rotation with non-solanaceous crops"
+            ],
+            "geographic_distribution": "Found in tomato-growing areas with humid, rainy climates.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., copper fungicides, chlorothalonil)",
+                "Cultural control by removing infected leaves"
+            ],
+            "economic_importance": "Septoria leaf spot can significantly reduce yield and fruit quality in tomatoes, leading to losses in commercial production."
+        },
+        {
+            "name": "Tomato_Spider_mites",
+            "disease_name": "Spider Mites (Tomato)",
+            "causal_organism": "Tetranychus urticae (arachnid)",
+            "symptoms": [
+                "Small, speckled, yellowish spots on leaves",
+                "Fine webbing on the underside of leaves",
+                "Premature leaf drop and stunted plant growth"
+            ],
+            "host_crops": [
+                "Tomato",
+                "Peppers",
+                "Cucumbers"
+            ],
+            "disease_cycle": "Spider mites reproduce quickly in warm, dry conditions and can cause significant damage to plant foliage.",
+            "environmental_conditions": [
+                "Warm, dry conditions (25-35°C)",
+                "Low humidity favors mite proliferation."
+            ],
+            "transmission": "Spread by wind, water, and human activity, including tools and equipment.",
+            "impact": "Reduces plant vigor, causes leaf loss, and decreases yield.",
+            "management_strategies": [
+                "Use of miticides",
+                "Natural predators (e.g., ladybugs, predatory mites)",
+                "Regular monitoring and early treatment"
+            ],
+            "prevention_tips": [
+                "Maintain high humidity levels to deter spider mite development",
+                "Use reflective mulches to deter mites"
+            ],
+            "geographic_distribution": "Common in hot, dry climates and in areas with poor irrigation.",
+            "treatment_or_cure": [
+                "Miticides (e.g., abamectin)",
+                "Biological control using predatory mites"
+            ],
+            "economic_importance": "Spider mites can significantly damage tomato plants, leading to reduced yield and fruit quality, especially in greenhouse and field settings."
+        },
+        {
+            "name": "Tomato_Target_Spot",
+            "disease_name": "Target Spot (Tomato)",
+            "causal_organism": "Corynespora cassiicola (fungus)",
+            "symptoms": [
+                "Circular, dark brown lesions with light gray centers",
+                "Lesions with concentric rings resembling targets",
+                "Premature defoliation and reduced fruit size"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The fungus survives in infected plant debris and spreads through wind, rain, and infected tools.",
+            "environmental_conditions": [
+                "Warm, humid conditions (20-30°C)",
+                "Frequent rainfall and high humidity encourage disease spread."
+            ],
+            "transmission": "Spread by wind, rain, and contaminated equipment.",
+            "impact": "Reduces photosynthesis, weakens plants, and decreases fruit yield and quality.",
+            "management_strategies": [
+                "Use of fungicides (e.g., copper-based fungicides)",
+                "Crop rotation and removal of infected plant debris",
+                "Use of resistant tomato varieties"
+            ],
+            "prevention_tips": [
+                "Space plants for good air circulation",
+                "Avoid overhead irrigation"
+            ],
+            "geographic_distribution": "Found in tomato-growing regions with humid, warm conditions.",
+            "treatment_or_cure": [
+                "Fungicides (e.g., chlorothalonil, mancozeb)",
+                "Cultural control practices"
+            ],
+            "economic_importance": "Target spot can reduce tomato yields and fruit quality, impacting both fresh and processed markets."
+        },
+        {
+            "name": "Tomato_Tomato_Yellow_Leaf_Curl_Virus",
+            "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+            "causal_organism": "Tomato yellow leaf curl virus (TYLCV)",
+            "symptoms": [
+                "Yellowing and curling of leaves",
+                "Stunted plant growth",
+                "Reduced fruit production and poor fruit quality"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The virus is transmitted by whiteflies (Bemisia tabaci) and primarily infects tomatoes in warm, dry conditions.",
+            "environmental_conditions": [
+                "Warm conditions favor both the virus and the whitefly vector."
+            ],
+            "transmission": "Spread by whiteflies feeding on infected plants.",
+            "impact": "Severe yield loss due to stunted growth and poor fruit development.",
+            "management_strategies": [
+                "Control whitefly populations with insecticides or biological control",
+                "Use resistant tomato varieties",
+                "Remove and destroy infected plants"
+            ],
+            "prevention_tips": [
+                "Use whitefly traps and reflective mulches",
+                "Avoid planting tomatoes near other crops susceptible to whiteflies"
+            ],
+            "geographic_distribution": "Common in tropical and subtropical regions, especially in areas where whiteflies are abundant.",
+            "treatment_or_cure": [
+                "Insecticides (e.g., imidacloprid, thiamethoxam)",
+                "Biological control with natural predators of whiteflies"
+            ],
+            "economic_importance": "TYLCV can cause devastating yield losses, particularly in regions with high whitefly populations."
+        },
+        {
+            "name": "Tomato_Tomato_mosaic_virus",
+            "disease_name": "Tomato Mosaic Virus (TMV)",
+            "causal_organism": "Tomato mosaic virus (TMV)",
+            "symptoms": [
+                "Mosaic-like pattern of light and dark green areas on leaves",
+                "Leaf curling and distortion",
+                "Stunted growth and reduced fruit set"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "The virus is spread by direct contact between infected and healthy plants, tools, or workers handling infected plants.",
+            "environmental_conditions": [
+                "Warm, temperate climates favor virus transmission."
+            ],
+            "transmission": "Spread through physical contact, contaminated tools, and infected seed.",
+            "impact": "Reduces photosynthesis, weakens plants, and decreases fruit yield and quality.",
+            "management_strategies": [
+                "Use virus-free seed and resistant varieties",
+                "Disinfect tools and avoid working in infected areas"
+            ],
+            "prevention_tips": [
+                "Practice good field hygiene and avoid contamination",
+                "Remove and destroy infected plants"
+            ],
+            "geographic_distribution": "Widespread in tomato-growing areas, particularly in temperate climates.",
+            "treatment_or_cure": [
+                "No chemical cure for TMV",
+                "Use resistant varieties and good cultural practices"
+            ],
+            "economic_importance": "Tomato mosaic virus can significantly reduce yield and fruit quality, leading to economic losses, especially in large-scale tomato farming."
+        },
+        {
+            "name": "Tomato_healthy",
+            "disease_name": "Healthy Tomato",
+            "causal_organism": "N/A",
+            "symptoms": [
+                "No visible signs of disease",
+                "Vibrant green leaves, strong stems, and healthy fruit growth"
+            ],
+            "host_crops": [
+                "Tomato"
+            ],
+            "disease_cycle": "N/A",
+            "environmental_conditions": [
+                "Optimal growing conditions with proper irrigation, sunlight, and soil health"
+            ],
+            "transmission": "N/A",
+            "impact": "Healthy tomato plants produce high-quality, marketable fruit.",
+            "management_strategies": [
+                "Regular pest and disease monitoring",
+                "Proper irrigation and fertilization"
+            ],
+            "prevention_tips": [
+                "Ensure good field sanitation",
+                "Check regularly for pests and diseases"
+            ],
+            "geographic_distribution": "Common in tomato-growing regions worldwide.",
+            "treatment_or_cure": "N/A",
+            "economic_importance": "Healthy tomato production supports both local and global markets for fresh consumption and processing."
+        }
+    ]
+}

@@ -179,9 +179,9 @@ app.post("/crop_disease_predict", upload.single('image'), (req, res) => {
         }
         // console.log(diseaseData);
         // diseaseData = diseaseData.disease[0];
-        for (let d of diseaseData) {
-          console.log(d.name.replace(/_/g, '').toLowerCase()); // Replace underscores with a space
-        }
+        // for (let d of diseaseData) {
+        //   console.log(d.name.replace(/_/g, '').toLowerCase()); // Replace underscores with a space
+        // }
 
         cropName = cropName.replace(/_/g, '')
 
@@ -195,7 +195,7 @@ app.post("/crop_disease_predict", upload.single('image'), (req, res) => {
         }
 
         const diseaseInfo = matchedCrop;
-        console.log(diseaseInfo);
+        // console.log(diseaseInfo);
         res.render("diseaseinfo.ejs", {
           crop: diseaseInfo,
           about: "about",

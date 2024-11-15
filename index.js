@@ -245,7 +245,7 @@ app.post("/predict", (req, res) => {
     rainfall: req.body.rainfall_In_mm,
   };
   axios
-    .post("http://127.0.0.1:5000/predict", inputData)
+    .post("https://harvest-horizon-backend.onrender.com/predict", inputData)
     .then((response) => {
       const cropName = response.data.prediction.toString().toLowerCase();
       console.log(cropName);

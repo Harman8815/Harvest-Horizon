@@ -154,7 +154,7 @@ app.post("/crop_disease_predict", upload.single('image'), (req, res) => {
   formData.append('image', imageBlob, 'image.jpg');
 
   axios
-    .post("http://127.0.0.1:5000/predict-image", formData, {
+    .post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
@@ -213,7 +213,7 @@ app.post("/crop_disease_predict", upload.single('image'), (req, res) => {
 
 
 
-app.post("/predict", (req, res) => {
+app.post("/yield_predict", (req, res) => {
   const inputData = {
     year: req.body.year,
     average_rainfall: req.body.average_rain_fall_mm_per_year,
@@ -224,7 +224,7 @@ app.post("/predict", (req, res) => {
   };
 
   axios
-    .post("http://127.0.0.1:5000/predict-yield", inputData)
+    .post("https://harvest-horizon-backend.onrender.com/predict-yield", inputData)
     .then((response) => {
       console.log(response);
       res.json(response);
@@ -234,7 +234,41 @@ app.post("/predict", (req, res) => {
       res.status(500).json({ error: "Error making prediction" });
     });
 });
-
+app.post("/predict", (req, res) => {
+ const inputData = {
+    N: req.body.Nitrogen,
+    P: req.body.P,
+    K: req.body.K,
+    temperature: req.body.temperature,
+    humidity: req.body.humidity,
+    ph: req.body.ph,
+    rainfall: req.body.rainfall_In_mm,
+  };
+  axios
+    .post("http://127.0.0.1:5000/predict", inputData)
+    .then((response) => {
+      const cropName = response.data.prediction.toString().toLowerCase();
+      console.log(cropName);
+      fs.readFile(path.join(__dirname, "crops.json"), "utf8", (err, data) => {
+        if (err) return res.status(500).json({ error: "Internal server error" });
+        const crops = JSON.parse(data).crops;
+        const crop = crops.find((c) => c.name.toLowerCase() === cropName);
+        console.log(crop)
+        res.render("cropInfo.ejs", {
+          crop,
+          about: "about",
+          services: "services",
+          home: "home",
+        });
+      });
+      // res.json({ prediction: response.data.prediction });
+      console.log(response.data.prediction);
+    })
+    .catch((error) => {
+      console.error("Error calling Flask API:", error);
+      res.status(500).send("Error making prediction");
+    });
+});
 // User Authentication Routes
 app.get("/signup", (req, res) => res.render("signup"));
 

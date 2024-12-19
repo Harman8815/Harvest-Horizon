@@ -7,6 +7,7 @@
   <title>Harvest Horizon</title>
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 <style>
   body {
@@ -30,6 +31,17 @@
     font-weight: 700;
     margin-bottom: 0;
   }
+  .home-section h1 {
+    font-size: 3rem; /* Adjusts the size of the h1 */
+    font-weight: bold; /* Optional: Makes the text bold */
+    margin-bottom: 1rem; /* Adds some spacing below the heading */
+}
+
+.home-section p {
+    font-size: 1.5rem; /* Adjusts the size of the paragraph text */
+    line-height: 1.8; /* Improves readability by increasing line spacing */
+    margin: 0; /* Ensures no extra margins are applied */
+}
 
   .navbar-nav .nav-link {
     color: #ffffff !important;
@@ -43,7 +55,20 @@
 
   .navbar-nav .nav-link:hover {
     color: #0dfd24 !important;
-  }
+    
+  }.home-section {
+    background-image: url(./homer.png);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the section */
+    min-height: 100vh; /* Ensures the section takes up the full viewport height */
+    display: flex; /* Allows for flexible alignment of content inside the section */
+    align-items: center; /* Vertically aligns content in the center */
+    justify-content: center; /* Horizontally aligns content in the center */
+    color: #fff; /* Optional: Sets text color to contrast with the background image */
+    text-align: center; /* Centers the text */
+}
+
 </style>
 <script src="//code.tidio.co/ncgdcnknfhepd6gmwgrbms0jvnvmkwsl.js" async></script>
 <body>
@@ -92,8 +117,8 @@
   <!-- 1st Section: Home -->
   <section class="home-section vh-100 d-flex justify-content-center align-items-center">
     <div class="container text-center">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home section of the website.</p>
+      <h1>Welcome to the Harvest Horizon</h1>
+      <p>This is a one point solution to all your problems</p>
     </div>
   </section>
 
@@ -307,5 +332,7 @@
 
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
+<script>
+  gsap.to(navbar-brand,{ rotation: 27, x: 100, duration: 1 })
+</script>
 </html>

@@ -1,0 +1,1398 @@
+{
+    "crops": [
+        {
+            "name": "RICE",
+            "image": "/rice.webp",
+            "description": "Rice is a staple food crop cultivated primarily in monsoon regions. It is a significant source of carbohydrates and is grown in flooded fields called paddies.",
+            "type": "Monsoon Crop",
+            "scientificName": "Oryza sativa",
+            "soilType": "Clayey, Silty Clay, Loamy",
+            "rainfall": "1000-1500 mm",
+            "temperature": "20-37°C",
+            "info": {
+                "overview": "Rice is one of the most widely consumed staple foods in the world, particularly in Asia. It is a versatile crop that can be grown in a variety of climates, but it thrives in warm and humid conditions. Rice cultivation has been a fundamental agricultural practice for thousands of years, and it continues to play a crucial role in food security and rural economies.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Clayey or loamy soil",
+                    "pH Range: 5.5 to 6.5",
+                    "Organic Matter: High organic content is beneficial",
+                    "Soil Preparation: Proper leveling to retain water is essential"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 20°C to 37°C",
+                    "Rainfall: Requires 1000-1500 mm annually",
+                    "Humidity: High humidity levels are favorable",
+                    "Sunlight: Requires abundant sunlight"
+                ],
+                "plantingMethods": [
+                    "Rice can be planted using various methods:",
+                    "- Direct Seeding: Sowing seeds directly into prepared fields.",
+                    "- Transplanting: Growing seedlings in a nursery and moving them to the main field.",
+                    "Transplanting is preferred in areas with heavy weed pressure."
+                ],
+                "waterManagement": [
+                    "Water management is critical in rice cultivation.",
+                    "Fields are usually flooded during the growing season to protect plants from weeds and pests.",
+                    "Maintain optimal water levels to promote healthy growth and prevent waterlogging."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, generally involves:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Application Timing: Split application for nitrogen is recommended."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Rice crops are susceptible to various pests and diseases:",
+                    "- Rice blast",
+                    "- Brown planthopper",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious pesticide use"
+                ],
+                "harvesting": [
+                    "Harvesting is a crucial step that requires careful timing.",
+                    "Typically done when grains reach physiological maturity:",
+                    "- Indicated by the yellowing of leaves and grains.",
+                    "Can be done manually or with machinery, depending on the scale of production."
+                ],
+                "postHarvestManagement": [
+                    "Post-harvest management is vital to prevent spoilage:",
+                    "- Dry the grains to reduce moisture content and prevent fungal infections.",
+                    "- Proper storage in airtight containers is crucial to maintain quality until it reaches the consumer."
+                ],
+                "conclusion": "Rice is more than just a crop; it is a vital part of many cultures and economies. With proper cultivation practices and effective management strategies, farmers can enhance yields and contribute to food security in their regions."
+            }
+        },
+        {
+            "name": "maize",
+            "image": "/maize.webp",
+            "description": "Maize, also known as corn, is a widely grown grain crop. It is used as food for humans, fodder for animals, and raw material in industry.",
+            "type": "Kharif and Rabi Crop",
+            "scientificName": "Zea mays",
+            "soilType": "Loamy, Sandy Loam",
+            "rainfall": "500-800 mm",
+            "temperature": "21-27°C",
+            "info": {
+                "overview": "Maize is a versatile crop that is widely cultivated for various purposes, including human consumption, animal feed, and industrial uses. It thrives in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Loamy or sandy loam soil",
+                    "pH Range: 5.8 to 7.0",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Adequate soil preparation is necessary for good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 21°C to 27°C",
+                    "Rainfall: Requires 500-800 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Maize can be planted using various methods:",
+                    "- Direct Seeding: Sowing seeds directly into prepared fields.",
+                    "- Transplanting: Less common; usually, maize is sown directly."
+                ],
+                "waterManagement": [
+                    "Water management is crucial during the early stages of growth.",
+                    "Maize requires regular watering but is susceptible to waterlogging.",
+                    "Maintain soil moisture levels for healthy growth."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, generally involves balanced nutrition:",
+                    "- Nitrogen (N): 80-120 kg/ha",
+                    "- Phosphorus (P2O5): 40-60 kg/ha",
+                    "- Potassium (K2O): 40-60 kg/ha",
+                    "Apply fertilizers before planting and during growth stages as needed."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Maize crops are vulnerable to pests and diseases such as:",
+                    "- Fall armyworm",
+                    "- Corn borers",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Crop rotation",
+                    "- Biological control",
+                    "- Use of resistant varieties"
+                ],
+                "harvesting": [
+                    "Harvesting is done when maize reaches physiological maturity:",
+                    "- Ears should be firm and grains well-filled.",
+                    "Harvest timing influences grain quality and yield."
+                ],
+                "postHarvestManagement": [
+                    "Post-harvest practices are essential to maintain maize quality:",
+                    "- Dry maize to reduce moisture content.",
+                    "- Store maize in well-ventilated, dry conditions to prevent mold and insect damage."
+                ],
+                "conclusion": "Maize cultivation is integral to global agriculture, providing food security and economic benefits. Farmers play a crucial role in implementing sustainable practices to enhance maize production."
+            }
+        },
+        {
+            "name": "wheat",
+            "image": "/wheat.webp",
+            "description": "Wheat is a major cereal grain grown in temperate regions. It is a key staple food for a large portion of the world’s population.",
+            "type": "Rabi Crop",
+            "scientificName": "Triticum aestivum",
+            "soilType": "Clay Loam, Sandy Loam",
+            "rainfall": "500-1000 mm",
+            "temperature": "15-25°C",
+            "info": {
+                "overview": "Wheat is a versatile crop known for its nutritional value and adaptability to diverse climates. It is one of the most widely cultivated cereal grains globally, serving as a staple food for many cultures.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained clay loam or sandy loam soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content enhances soil fertility",
+                    "Soil Preparation: Deep plowing to ensure good root development"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 15°C to 25°C",
+                    "Rainfall: Requires 500-1000 mm annually",
+                    "Sunlight: Requires adequate sunlight for photosynthesis",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Wheat is typically planted using conventional methods:",
+                    "- Direct Seeding: Sowing seeds directly into well-prepared soil.",
+                    "- Crop Rotation: Alternating wheat with other crops to improve soil health."
+                ],
+                "waterManagement": [
+                    "Water management is crucial during critical growth stages.",
+                    "Wheat requires regular watering but is sensitive to waterlogging.",
+                    "Apply irrigation based on soil moisture levels and weather conditions."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Wheat crops face various pests and diseases:",
+                    "- Wheat rusts",
+                    "- Aphids",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Resistant varieties",
+                    "- Biological control",
+                    "- Timely application of fungicides and insecticides"
+                ],
+                "harvesting": [
+                    "Harvesting wheat at the right time is crucial for quality:",
+                    "- Harvest when grains are fully mature and dry.",
+                    "Use modern machinery for efficient harvesting and threshing."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling ensures grain quality:",
+                    "- Thoroughly dry wheat to safe moisture levels.",
+                    "- Store in clean, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Wheat cultivation plays a vital role in global food security and economic stability. Farmers can optimize yields and sustainability through improved practices and technological advancements."
+            }
+        },
+        {
+            "name": "chickpea",
+            "image": "/chickpea.webp",
+            "description": "Chickpea, also known as garbanzo bean, is a leguminous crop cultivated for its nutritious seeds. It is widely consumed worldwide and used in various culinary dishes.",
+            "type": "Rabi Crop",
+            "scientificName": "Cicer arietinum",
+            "soilType": "Well-drained loamy soil",
+            "rainfall": "400-600 mm",
+            "temperature": "20-30°C",
+            "info": {
+                "overview": "Chickpea is an important pulse crop known for its high protein and fiber content. It thrives in semi-arid climates with well-drained soils and moderate rainfall. Cultivation of chickpea dates back thousands of years and continues to be a staple in diets across many cultures.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good soil tilth for root development"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 20°C to 30°C",
+                    "Rainfall: Requires 400-600 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Chickpea is typically planted using direct seeding methods.",
+                    "Sowing depth and spacing depend on variety and soil conditions."
+                ],
+                "waterManagement": [
+                    "Chickpea requires moderate watering, especially during flowering and pod formation stages.",
+                    "Avoid water stress to ensure good yield and quality."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 20-30 kg/ha",
+                    "- Phosphorus (P2O5): 30-40 kg/ha",
+                    "- Potassium (K2O): 20-30 kg/ha",
+                    "Apply fertilizers before planting and during early growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Chickpea crops are susceptible to various pests and diseases:",
+                    "- Chickpea pod borer",
+                    "- Ascochyta blight",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Crop rotation",
+                    "- Biological control methods"
+                ],
+                "harvesting": [
+                    "Harvest chickpea when pods are fully mature and dry.",
+                    "Timing is crucial to avoid seed shattering and quality loss."
+                ],
+                "postHarvestManagement": [
+                    "Proper drying and storage are essential to maintain chickpea quality:",
+                    "- Dry seeds to safe moisture levels before storage.",
+                    "- Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Chickpea cultivation offers sustainable food production and economic opportunities for farmers globally. Improved agronomic practices and pest management can enhance chickpea yields and quality."
+            }
+        },
+        {
+            "name": "KidneyBeans",
+            "image": "/kidneybeans.webp",
+            "description": "Kidney beans are a type of legume known for their kidney-like shape and rich nutritional value. They are popular in cuisines worldwide, especially in soups, stews, and salads.",
+            "type": "Kharif Crop",
+            "scientificName": "Phaseolus vulgaris",
+            "soilType": "Well-drained sandy loam",
+            "rainfall": "600-800 mm",
+            "temperature": "20-30°C",
+            "info": {
+                "overview": "Kidney beans are a versatile crop valued for their high protein content and dietary fiber. They thrive in warm climates with well-drained soils and moderate rainfall. Cultivation of kidney beans supports food security and nutritional needs in many regions.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good soil drainage for healthy root development"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 20°C to 30°C",
+                    "Rainfall: Requires 600-800 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Kidney beans are typically sown directly into prepared fields.",
+                    "Spacing and depth depend on variety and soil conditions."
+                ],
+                "waterManagement": [
+                    "Kidney beans require regular watering during flowering and pod development stages.",
+                    "Avoid water stress to ensure good pod formation and yield."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 30-40 kg/ha",
+                    "- Phosphorus (P2O5): 20-30 kg/ha",
+                    "- Potassium (K2O): 30-40 kg/ha",
+                    "Apply fertilizers before planting and during early growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Kidney bean crops are vulnerable to various pests and diseases:",
+                    "- Mexican bean beetle",
+                    "- Anthracnose",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Crop rotation",
+                    "- Biological control methods"
+                ],
+                "harvesting": [
+                    "Harvest kidney beans when pods are fully mature and dry.",
+                    "Timing is critical to prevent seed loss and ensure quality."
+                ],
+                "postHarvestManagement": [
+                    "Proper drying and storage are crucial to maintain kidney bean quality:",
+                    "- Dry seeds thoroughly before storage to reduce moisture content.",
+                    "- Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Kidney bean cultivation contributes significantly to global food security and nutrition. Farmers can optimize production through sustainable practices and effective pest management."
+            }
+        },
+        {
+            "name": "PigeonPeas",
+            "image": "/pigeonpeas.jpg",
+            "description": "Pigeon peas, also known as tuvar dal or arhar dal, are leguminous crops widely grown in tropical and subtropical regions. They are valued for their protein-rich seeds and culinary versatility.",
+            "type": "Kharif Crop",
+            "scientificName": "Cajanus cajan",
+            "soilType": "Well-drained sandy loam",
+            "rainfall": "600-800 mm",
+            "temperature": "20-30°C",
+            "info": {
+                "overview": "Pigeon peas are an important pulse crop known for their nutritional value and adaptability to various climates. They thrive in warm, semi-arid regions with well-drained soils and moderate rainfall. Cultivation of pigeon peas supports food security and sustainable agriculture.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good soil structure and drainage"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 20°C to 30°C",
+                    "Rainfall: Requires 600-800 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Pigeon peas are typically sown directly into prepared fields.",
+                    "Spacing and depth depend on variety and soil conditions."
+                ],
+                "waterManagement": [
+                    "Pigeon peas require regular watering during flowering and pod development stages.",
+                    "Avoid water stress to ensure good pod formation and yield."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 30-40 kg/ha",
+                    "- Phosphorus (P2O5): 20-30 kg/ha",
+                    "- Potassium (K2O): 30-40 kg/ha",
+                    "Apply fertilizers before planting and during early growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Pigeon pea crops are vulnerable to various pests and diseases:",
+                    "- Pod borer",
+                    "- Fusarium wilt",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Crop rotation",
+                    "- Biological control methods"
+                ],
+                "harvesting": [
+                    "Harvest pigeon peas when pods are fully mature and dry.",
+                    "Timing is crucial to prevent seed loss and ensure quality."
+                ],
+                "postHarvestManagement": [
+                    "Proper drying and storage are essential to maintain pigeon pea quality:",
+                    "- Dry seeds thoroughly before storage to reduce moisture content.",
+                    "- Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Pigeon pea cultivation offers sustainable food production and economic benefits for farmers worldwide. Improved agronomic practices and pest management can enhance pigeon pea yields and quality."
+            }
+        },
+        {
+            "name": "MothBeans",
+            "image": "/mothbeans.webp",
+            "description": "Moth beans, also known as matki or Turkish gram, are a pulse crop grown primarily in arid and semi-arid regions. They are known for their drought tolerance and nutritional benefits.",
+            "type": "Kharif Crop",
+            "scientificName": "Vigna aconitifolia",
+            "soilType": "Sandy, Loamy",
+            "rainfall": "300-400 mm",
+            "temperature": "25-35°C",
+            "info": {
+                "overview": "Moth beans are a pulse crop valued for their drought tolerance and nutritional content. They are commonly grown in arid and semi-arid regions where other crops may struggle.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Sandy or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good drainage to prevent waterlogging"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 35°C",
+                    "Rainfall: Requires 300-400 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Moth beans can be planted using direct seeding methods.",
+                    "Sow seeds at the beginning of the rainy season or after the first rains."
+                ],
+                "waterManagement": [
+                    "Moth beans are drought-tolerant but require adequate moisture during critical growth stages.",
+                    "Avoid overwatering to prevent fungal diseases.",
+                    "Use mulching to conserve soil moisture."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Moth beans fix nitrogen in the soil through symbiotic relationships with bacteria.",
+                    "Minimal external fertilizer application is needed.",
+                    "Apply phosphorus and potassium based on soil test results if deficient."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Moth beans are relatively resistant to pests and diseases.",
+                    "Monitor for aphids, pod borers, and fungal diseases during wet conditions.",
+                    "Practice crop rotation to reduce pest pressure."
+                ],
+                "harvesting": [
+                    "Harvest moth beans when pods are dry and brittle.",
+                    "Use combine harvesters or manual threshing methods."
+                ],
+                "postHarvestManagement": [
+                    "Dry harvested beans thoroughly to reduce moisture content.",
+                    "Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Moth beans are an important pulse crop for regions with limited water availability. By adopting appropriate cultivation and management practices, farmers can enhance yields and contribute to food security."
+            }
+        },
+        {
+            "name": "MungBeans",
+            "image": "/mungbeans.webp",
+            "description": "Mung beans, also known as green gram or golden gram, are a legume crop cultivated for their edible seeds. They are widely grown in Asia and other tropical regions.",
+            "type": "Kharif Crop",
+            "scientificName": "Vigna radiata",
+            "soilType": "Sandy, Loamy",
+            "rainfall": "500-1000 mm",
+            "temperature": "25-35°C",
+            "info": {
+                "overview": "Mung beans are an important legume crop known for their nutritional value and versatility in cuisine. They are commonly grown in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Sandy or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good drainage to prevent waterlogging"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 35°C",
+                    "Rainfall: Requires 500-1000 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Mung beans can be planted using direct seeding methods.",
+                    "Sow seeds at the beginning of the rainy season or after the first rains."
+                ],
+                "waterManagement": [
+                    "Mung beans require regular watering during critical growth stages.",
+                    "Avoid waterlogging as it can lead to root rot.",
+                    "Use mulching to retain soil moisture."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Mung beans fix nitrogen in the soil through symbiotic relationships with bacteria.",
+                    "Minimal external fertilizer application is needed.",
+                    "Apply phosphorus and potassium based on soil test results if deficient."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Mung beans are susceptible to pests like aphids and pod borers.",
+                    "Monitor regularly and use integrated pest management (IPM) strategies.",
+                    "Practice crop rotation to break pest cycles."
+                ],
+                "harvesting": [
+                    "Harvest mung beans when pods are mature and seeds are firm.",
+                    "Use combine harvesters or manual methods for large and small-scale farming, respectively."
+                ],
+                "postHarvestManagement": [
+                    "Dry harvested beans thoroughly to reduce moisture content.",
+                    "Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Mung beans are a valuable crop due to their high protein content and adaptability to various climates. By adopting sustainable farming practices, farmers can improve yields and profitability."
+            }
+        },
+        {
+            "name": "BlackGram",
+            "image": "/blackgram.webp",
+            "description": "Black gram, also known as urad bean, is a widely cultivated pulse crop. It is known for its rich protein content and is an essential ingredient in many South Asian cuisines.",
+            "type": "Kharif Crop",
+            "scientificName": "Vigna mungo",
+            "soilType": "Sandy, Loamy",
+            "rainfall": "500-800 mm",
+            "temperature": "25-35°C",
+            "info": {
+                "overview": "Black gram is an important pulse crop grown for its protein-rich seeds. It is commonly cultivated in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Sandy or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Ensure good drainage to prevent waterlogging"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 35°C",
+                    "Rainfall: Requires 500-800 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Black gram can be planted using direct seeding methods.",
+                    "Sow seeds at the beginning of the rainy season or after the first rains."
+                ],
+                "waterManagement": [
+                    "Black gram requires regular watering during critical growth stages.",
+                    "Avoid waterlogging as it can lead to root rot.",
+                    "Use mulching to retain soil moisture."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Black gram fixes nitrogen in the soil through symbiotic relationships with bacteria.",
+                    "Minimal external fertilizer application is needed.",
+                    "Apply phosphorus and potassium based on soil test results if deficient."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Black gram is susceptible to pests like pod borers and aphids.",
+                    "Monitor regularly and use integrated pest management (IPM) strategies.",
+                    "Practice crop rotation to break pest cycles."
+                ],
+                "harvesting": [
+                    "Harvest black gram when pods are mature and seeds are firm.",
+                    "Use combine harvesters or manual methods for large and small-scale farming, respectively."
+                ],
+                "postHarvestManagement": [
+                    "Dry harvested beans thoroughly to reduce moisture content.",
+                    "Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Black gram is valued for its nutritional benefits and culinary versatility. By adopting sustainable farming practices, farmers can enhance black gram production and contribute to food security."
+            }
+        },
+        {
+            "name": "Lentil",
+            "image": "/lentil.webp",
+            "description": "Lentils are a type of legume known for their high protein and fiber content. They are a staple in many diets around the world.",
+            "type": "Rabi Crop",
+            "scientificName": "Lens culinaris",
+            "soilType": "Loamy, Sandy Loam",
+            "rainfall": "300-500 mm",
+            "temperature": "18-30°C",
+            "info": {
+                "overview": "Lentils are a nutritious legume, rich in protein, fiber, and essential nutrients. They are widely cultivated for their edible seeds and are a crucial part of many diets, especially in South Asia.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Loamy or sandy loam soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate to high organic content is beneficial",
+                    "Soil Preparation: Proper tilth and drainage are essential"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 18°C to 30°C",
+                    "Rainfall: Requires 300-500 mm annually",
+                    "Sunlight: Full sunlight is necessary for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Lentils can be planted using the following methods:",
+                    "- Direct Seeding: Sowing seeds directly into prepared fields.",
+                    "- Crop Rotation: Lentils are often rotated with cereals to improve soil fertility."
+                ],
+                "waterManagement": [
+                    "Water management is crucial for lentil growth:",
+                    "Lentils require regular but moderate watering, especially during flowering and pod formation.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, generally involves:",
+                    "- Nitrogen (N): Lentils can fix atmospheric nitrogen, so external nitrogen may not be necessary.",
+                    "- Phosphorus (P2O5): 30-60 kg/ha",
+                    "- Potassium (K2O): 20-40 kg/ha",
+                    "Apply fertilizers at planting and as needed based on soil fertility."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Lentil crops are susceptible to various pests and diseases:",
+                    "- Aphids",
+                    "- Rusts",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Crop rotation",
+                    "- Biological control methods"
+                ],
+                "harvesting": [
+                    "Harvesting lentils at the right time is essential for quality:",
+                    "- Harvest when pods turn yellow and seeds are firm.",
+                    "Manual or mechanical harvesting can be used depending on the scale of production."
+                ],
+                "postHarvestManagement": [
+                    "Post-harvest handling is crucial to maintain seed quality:",
+                    "- Dry lentils thoroughly to reduce moisture content.",
+                    "- Store in cool, dry conditions to prevent mold and insect infestation."
+                ],
+                "conclusion": "Lentils are a valuable crop for nutrition and soil health. Proper cultivation and management practices can enhance yields and contribute to sustainable agriculture."
+            }
+        },
+        {
+            "name": "Pomegranate",
+            "image": "/pomegranate.webp",
+            "description": "Pomegranate is a fruit-bearing shrub known for its nutrient-rich seeds and juice. It is valued for its health benefits and unique taste.",
+            "type": "Perennial Crop",
+            "scientificName": "Punica granatum",
+            "soilType": "Loamy, Sandy Loam",
+            "rainfall": "500-800 mm",
+            "temperature": "25-35°C",
+            "info": {
+                "overview": "Pomegranate is a hardy fruit crop valued for its delicious seeds and juice, which are rich in vitamins and antioxidants. It can be grown in a variety of climates but prefers hot and dry conditions.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Loamy or sandy loam soil with good drainage",
+                    "pH Range: 5.5 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Well-drained soil is crucial to prevent root rot"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 35°C",
+                    "Rainfall: Requires 500-800 mm annually",
+                    "Sunlight: Full sunlight is necessary for optimal fruit development",
+                    "Humidity: Low to moderate humidity levels are ideal"
+                ],
+                "plantingMethods": [
+                    "Pomegranates can be planted using the following methods:",
+                    "- Seedlings: Planting young plants in well-prepared soil.",
+                    "- Cuttings: Using hardwood cuttings from healthy plants.",
+                    "Ensure proper spacing to allow good air circulation and sunlight penetration."
+                ],
+                "waterManagement": [
+                    "Water management is critical for pomegranate growth:",
+                    "Regular watering during the establishment phase.",
+                    "Reduce watering frequency once the plant is established to prevent overwatering."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, generally involves:",
+                    "- Nitrogen (N): 150-200 g/plant/year",
+                    "- Phosphorus (P2O5): 100-150 g/plant/year",
+                    "- Potassium (K2O): 150-200 g/plant/year",
+                    "Apply fertilizers during the growing season and ensure balanced nutrition."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Pomegranate crops are susceptible to various pests and diseases:",
+                    "- Fruit borer",
+                    "- Leaf spot",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting pomegranates at the right time ensures the best quality:",
+                    "- Harvest when the fruit develops a deep red color and makes a metallic sound when tapped.",
+                    "Careful handling during harvesting to prevent fruit damage."
+                ],
+                "postHarvestManagement": [
+                    "Post-harvest handling is essential to maintain fruit quality:",
+                    "- Store in cool, dry conditions to prolong shelf life.",
+                    "- Proper packaging to prevent physical damage during transportation."
+                ],
+                "conclusion": "Pomegranate cultivation offers significant economic and health benefits. Adopting best practices in cultivation and management can enhance productivity and fruit quality."
+            }
+        },
+        {
+            "name": "Banana",
+            "image": "/banana.webp",
+            "description": "Bananas are a tropical fruit known for their sweet taste and high nutritional value. They are one of the most popular fruits globally.",
+            "type": "Perennial Crop",
+            "scientificName": "Musa spp.",
+            "soilType": "Loamy, Sandy Loam",
+            "rainfall": "1200-2200 mm",
+            "temperature": "26-30°C",
+            "info": {
+                "overview": "Bananas are a widely cultivated tropical fruit, prized for their sweet flavor and nutritional benefits. They are a staple food in many regions and a major export commodity.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy or sandy loam soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: High organic content is beneficial",
+                    "Soil Preparation: Deep tillage to enhance root development"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 26°C to 30°C",
+                    "Rainfall: Requires 1200-2200 mm annually",
+                    "Sunlight: Full sunlight is essential for growth and fruiting",
+                    "Humidity: High humidity levels are favorable"
+                ],
+                "plantingMethods": [
+                    "Bananas are typically planted using the following methods:",
+                    "- Suckers: Planting young offshoots from mature banana plants.",
+                    "- Tissue Culture: Using tissue-cultured plantlets for uniform growth.",
+                    "Ensure proper spacing for air circulation and sunlight penetration."
+                ],
+                "waterManagement": [
+                    "Water management is crucial for banana cultivation:",
+                    "Regular irrigation to maintain soil moisture, especially during dry periods.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, generally involves:",
+                    "- Nitrogen (N): 200-300 g/plant/year",
+                    "- Phosphorus (P2O5): 50-100 g/plant/year",
+                    "- Potassium (K2O): 300-400 g/plant/year",
+                    "Apply fertilizers in split doses during the growing season."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Banana crops are susceptible to various pests and diseases:",
+                    "- Banana weevil",
+                    "- Sigatoka leaf spot",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Regular monitoring and judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting bananas at the right time ensures the best quality:",
+                    "- Harvest when the fruit is mature but still green.",
+                    "Cut the whole bunch and handle carefully to prevent bruising."
+                ],
+                "postHarvestManagement": [
+                    "Post-harvest handling is essential to maintain fruit quality:",
+                    "- Ripen bananas in controlled conditions to ensure uniform ripening.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Banana cultivation is vital for food security and economic stability in many tropical regions. Adopting best practices in cultivation and management can enhance productivity and fruit quality."
+            }
+        },
+        {
+            "name": "Mango",
+            "image": "/mango.webp",
+            "description": "Mango is a tropical fruit known for its sweetness and vibrant flavor. It is widely cultivated in warm regions around the world.",
+            "type": "Perennial Crop",
+            "scientificName": "Mangifera indica",
+            "soilType": "Well-drained loamy soil",
+            "rainfall": "750-2500 mm",
+            "temperature": "24-30°C",
+            "info": {
+                "overview": "Mango is one of the most popular tropical fruits, cherished for its sweet taste and high nutritional value. It thrives in warm climates and is a significant export commodity for many countries.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy soil",
+                    "pH Range: 5.5 to 7.5",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Deep plowing to support root development"
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 24°C to 30°C",
+                    "Rainfall: Requires 750-2500 mm annually",
+                    "Sunlight: Prefers full sunlight for optimal fruit production",
+                    "Humidity: Moderate to high humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Mango can be propagated through various methods:",
+                    "- Grafting: Common method to ensure true-to-type fruit production.",
+                    "- Seedling: Less common due to variability in fruit quality."
+                ],
+                "waterManagement": [
+                    "Mango trees require regular watering, especially during dry periods.",
+                    "Young trees need more frequent watering compared to mature trees.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Mango trees are susceptible to various pests and diseases:",
+                    "- Mango hoppers",
+                    "- Powdery mildew",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when fruits reach full maturity:",
+                    "- Indicated by a change in skin color and a slight softening.",
+                    "Harvesting methods vary from manual picking to using specialized tools."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle fruits carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Mango cultivation is both economically and culturally significant. By following best practices, farmers can enhance yield and fruit quality, contributing to the global mango supply."
+            }
+        },
+        {
+            "name": "Grapes",
+            "image": "/grapes.webp",
+            "description": "Grapes are a widely cultivated fruit crop known for their use in making wine, raisins, and fresh consumption.",
+            "type": "Perennial Crop",
+            "scientificName": "Vitis vinifera",
+            "soilType": "Well-drained sandy loam",
+            "rainfall": "600-800 mm",
+            "temperature": "15-30°C",
+            "info": {
+                "overview": "Grapes are a versatile fruit crop cultivated for a variety of uses, including fresh consumption, wine production, and drying into raisins. They grow well in temperate climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 15°C to 30°C",
+                    "Rainfall: Requires 600-800 mm annually",
+                    "Sunlight: Requires full sunlight for optimal fruit production",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Grapes are typically propagated through cuttings:",
+                    "- Planting is done in rows with adequate spacing to ensure good air circulation.",
+                    "Training and pruning are essential to manage vine growth and fruit production."
+                ],
+                "waterManagement": [
+                    "Water management is crucial, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 50-80 kg/ha",
+                    "- Phosphorus (P2O5): 30-50 kg/ha",
+                    "- Potassium (K2O): 30-50 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Grapes are susceptible to various pests and diseases:",
+                    "- Powdery mildew",
+                    "- Grape berry moth",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of fungicides and insecticides"
+                ],
+                "harvesting": [
+                    "Harvesting is done when grapes reach full maturity:",
+                    "- Indicated by color change and sugar content.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle grapes carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Grape cultivation is a significant agricultural practice with diverse uses. By following best practices, farmers can enhance yield and fruit quality, contributing to the global grape supply."
+            }
+        },
+        {
+            "name": "Watermelon",
+            "image": "/watermelon.webp",
+            "description": "Watermelon is a popular fruit known for its refreshing taste and high water content. It is widely grown in warm climates.",
+            "type": "Annual Crop",
+            "scientificName": "Citrullus lanatus",
+            "soilType": "Sandy loam, loamy soil",
+            "rainfall": "400-600 mm",
+            "temperature": "25-30°C",
+            "info": {
+                "overview": "Watermelon is a refreshing and hydrating fruit crop, commonly grown in warm climates. It is valued for its high water content and sweet flavor, making it a favorite summer fruit.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 30°C",
+                    "Rainfall: Requires 400-600 mm annually",
+                    "Sunlight: Requires full sunlight for optimal fruit production",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Watermelon is typically planted using seeds or transplants:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "- Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Watermelon requires consistent watering, especially during fruit development.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 50-80 kg/ha",
+                    "- Phosphorus (P2O5): 30-50 kg/ha",
+                    "- Potassium (K2O): 30-50 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Watermelon crops are susceptible to various pests and diseases:",
+                    "- Powdery mildew",
+                    "- Aphids",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of fungicides and insecticides"
+                ],
+                "harvesting": [
+                    "Harvesting is done when watermelons reach full maturity:",
+                    "- Indicated by a change in skin color and a hollow sound when tapped.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle watermelons carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Watermelon cultivation is a significant agricultural practice, providing a popular and refreshing fruit. By following best practices, farmers can enhance yield and fruit quality, contributing to the global watermelon supply."
+            }
+        },
+        {
+            "name": "Muskmelon",
+            "image": "/muskmelon.webp",
+            "description": "Muskmelon, also known as cantaloupe, is a sweet and aromatic fruit commonly grown in warm climates.",
+            "type": "Annual Crop",
+            "scientificName": "Cucumis melo",
+            "soilType": "Sandy loam, loamy soil",
+            "rainfall": "400-600 mm",
+            "temperature": "25-30°C",
+            "info": {
+                "overview": "Muskmelon is a sweet and aromatic fruit crop, widely grown for its refreshing taste and high nutritional value. It thrives in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 30°C",
+                    "Rainfall: Requires 400-600 mm annually",
+                    "Sunlight: Requires full sunlight for optimal fruit production",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Muskmelon is typically planted using seeds or transplants:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "- Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Muskmelon requires consistent watering, especially during fruit development.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 50-80 kg/ha",
+                    "- Phosphorus (P2O5): 30-50 kg/ha",
+                    "- Potassium (K2O): 30-50 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Muskmelon crops are susceptible to various pests and diseases:",
+                    "- Powdery mildew",
+                    "- Aphids",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of fungicides and insecticides"
+                ],
+                "harvesting": [
+                    "Harvesting is done when muskmelons reach full maturity:",
+                    "- Indicated by a change in skin color and a fragrant aroma.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle muskmelons carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Muskmelon cultivation is a significant agricultural practice, providing a sweet and aromatic fruit. By following best practices, farmers can enhance yield and fruit quality, contributing to the global muskmelon supply."
+            }
+        },
+        {
+            "name": "Apple",
+            "image": "/apple.webp",
+            "description": "Apple is a widely cultivated fruit known for its crisp texture and sweet-tart flavor. It is grown in temperate regions around the world.",
+            "type": "Perennial Crop",
+            "scientificName": "Malus domestica",
+            "soilType": "Loamy, sandy loam soil",
+            "rainfall": "600-800 mm",
+            "temperature": "18-24°C",
+            "info": {
+                "overview": "Apple is a popular fruit crop known for its crisp texture and sweet-tart flavor. It is widely grown in temperate regions and is a significant source of vitamins and dietary fiber.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy or sandy loam soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 18°C to 24°C",
+                    "Rainfall: Requires 600-800 mm annually",
+                    "Sunlight: Prefers full sunlight for optimal fruit production",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Apple can be propagated through various methods:",
+                    "- Grafting: Common method to ensure true-to-type fruit production.",
+                    "- Seedling: Less common due to variability in fruit quality."
+                ],
+                "waterManagement": [
+                    "Apple trees require regular watering, especially during dry periods.",
+                    "Young trees need more frequent watering compared to mature trees.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Apple trees are susceptible to various pests and diseases:",
+                    "- Apple scab",
+                    "- Codling moth",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when fruits reach full maturity:",
+                    "- Indicated by a change in skin color and a slight softening.",
+                    "Harvesting methods vary from manual picking to using specialized tools."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle apples carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Apple cultivation is both economically and culturally significant. By following best practices, farmers can enhance yield and fruit quality, contributing to the global apple supply."
+            }
+        },
+        {
+            "name": "Orange",
+            "image": "/orange.jpg",
+            "description": "Orange is a citrus fruit known for its tangy flavor and high vitamin C content. It is widely grown in tropical and subtropical regions.",
+            "type": "Perennial Crop",
+            "scientificName": "Citrus sinensis",
+            "soilType": "Well-drained sandy loam",
+            "rainfall": "800-1200 mm",
+            "temperature": "15-30°C",
+            "info": {
+                "overview": "Orange is a popular citrus fruit valued for its tangy flavor and high nutritional content, especially vitamin C. It thrives in tropical and subtropical climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam soil",
+                    "pH Range: 5.5 to 7.0",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 15°C to 30°C",
+                    "Rainfall: Requires 800-1200 mm annually",
+                    "Sunlight: Requires full sunlight for optimal fruit production",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Oranges are typically propagated through grafting:",
+                    "- Planting is done in rows with adequate spacing to ensure good air circulation.",
+                    "Training and pruning are essential to manage tree growth and fruit production."
+                ],
+                "waterManagement": [
+                    "Water management is crucial, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 50-80 kg/ha",
+                    "- Phosphorus (P2O5): 30-50 kg/ha",
+                    "- Potassium (K2O): 30-50 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Orange trees are susceptible to various pests and diseases:",
+                    "- Citrus canker",
+                    "- Aphids",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is done when oranges reach full maturity:",
+                    "- Indicated by a change in skin color and sweetness.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle oranges carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Orange cultivation is a significant agricultural practice with high economic value. By following best practices, farmers can enhance yield and fruit quality, contributing to the global orange supply."
+            }
+        },
+        {
+            "name": "Papaya",
+            "image": "/papaya.webp",
+            "description": "Papaya is a tropical fruit known for its sweet taste and rich nutritional profile. It is widely grown in warm climates.",
+            "type": "Perennial Crop",
+            "scientificName": "Carica papaya",
+            "soilType": "Well-drained sandy loam",
+            "rainfall": "1000-2000 mm",
+            "temperature": "22-26°C",
+            "info": {
+                "overview": "Papaya is a tropical fruit valued for its sweet taste and high nutritional content, especially vitamin C and fiber. It thrives in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam soil",
+                    "pH Range: 6.0 to 6.5",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 22°C to 26°C",
+                    "Rainfall: Requires 1000-2000 mm annually",
+                    "Sunlight: Prefers full sunlight for optimal fruit production",
+                    "Humidity: High humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Papaya is typically propagated through seeds:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Papaya requires regular watering, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Papaya trees are susceptible to various pests and diseases:",
+                    "- Papaya ringspot virus",
+                    "- Aphids",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when fruits reach full maturity:",
+                    "- Indicated by a change in skin color and a slight softening.",
+                    "Harvesting methods vary from manual picking to using specialized tools."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle papayas carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Papaya cultivation is both economically and nutritionally significant. By following best practices, farmers can enhance yield and fruit quality, contributing to the global papaya supply."
+            }
+        },
+        {
+            "name": "Coconut",
+            "image": "/coconut.webp",
+            "description": "Coconut is a versatile crop known for its edible flesh, water, and oil. It is widely grown in tropical regions.",
+            "type": "Perennial Crop",
+            "scientificName": "Cocos nucifera",
+            "soilType": "Sandy loam, loamy soil",
+            "rainfall": "1500-2500 mm",
+            "temperature": "25-30°C",
+            "info": {
+                "overview": "Coconut is a versatile crop valued for its edible flesh, water, and oil. It thrives in tropical climates with well-drained soil and high rainfall.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained sandy loam or loamy soil",
+                    "pH Range: 5.0 to 8.0",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 25°C to 30°C",
+                    "Rainfall: Requires 1500-2500 mm annually",
+                    "Sunlight: Requires full sunlight for optimal fruit production",
+                    "Humidity: High humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Coconuts are typically propagated through seeds (nuts):",
+                    "- Direct Planting: Planting nuts directly into the field.",
+                    "- Nursery Raising: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Coconut trees require regular watering, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 50-100 kg/ha",
+                    "- Phosphorus (P2O5): 50-100 kg/ha",
+                    "- Potassium (K2O): 50-100 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Coconut trees are susceptible to various pests and diseases:",
+                    "- Coconut mite",
+                    "- Bud rot",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when nuts reach full maturity:",
+                    "- Indicated by a change in husk color and sound when shaken.",
+                    "Harvesting methods vary from manual picking to using specialized tools."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fruit quality:",
+                    "- Handle coconuts carefully to prevent damage.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Coconut cultivation is economically significant and versatile. By following best practices, farmers can enhance yield and product quality, contributing to the global coconut supply."
+            }
+        },
+        {
+            "name": "Cotton",
+            "image": "/cotton.webp",
+            "description": "Cotton is a major fiber crop used in textile production. It is widely grown in warm climates.",
+            "type": "Annual Crop",
+            "scientificName": "Gossypium spp.",
+            "soilType": "Loamy, clay loam",
+            "rainfall": "500-1000 mm",
+            "temperature": "20-30°C",
+            "info": {
+                "overview": "Cotton is a major fiber crop used extensively in textile production. It thrives in warm climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy or clay loam soil",
+                    "pH Range: 5.8 to 8.0",
+                    "Organic Matter: Moderate organic content is beneficial",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 20°C to 30°C",
+                    "Rainfall: Requires 500-1000 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: Moderate humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Cotton is typically propagated through seeds:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "- Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Cotton requires regular watering, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 80-120 kg/ha",
+                    "- Phosphorus (P2O5): 40-60 kg/ha",
+                    "- Potassium (K2O): 40-60 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Cotton crops are susceptible to various pests and diseases:",
+                    "- Boll weevil",
+                    "- Cotton wilt",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when bolls reach full maturity:",
+                    "- Indicated by the opening of bolls and exposure of cotton fibers.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fiber quality:",
+                    "- Handle cotton carefully to prevent contamination.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Cotton cultivation is a significant agricultural practice with high economic value. By following best practices, farmers can enhance yield and fiber quality, contributing to the global cotton supply."
+            }
+        },
+        {
+            "name": "Jute",
+            "image": "/jute.jpg",
+            "description": "Jute is a long, soft, and shiny vegetable fiber that can be spun into coarse, strong threads. It is widely grown in humid climates.",
+            "type": "Annual Crop",
+            "scientificName": "Corchorus spp.",
+            "soilType": "Alluvial, loamy soil",
+            "rainfall": "1500-2500 mm",
+            "temperature": "24-37°C",
+            "info": {
+                "overview": "Jute is a long, soft, and shiny vegetable fiber that is spun into coarse, strong threads. It thrives in humid climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained alluvial or loamy soil",
+                    "pH Range: 6.0 to 7.5",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 24°C to 37°C",
+                    "Rainfall: Requires 1500-2500 mm annually",
+                    "Sunlight: Requires full sunlight for optimal growth",
+                    "Humidity: High humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Jute is typically propagated through seeds:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "- Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Jute requires regular watering, especially during dry periods.",
+                    "Flood irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 60-80 kg/ha",
+                    "- Phosphorus (P2O5): 40-50 kg/ha",
+                    "- Potassium (K2O): 40-50 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Jute crops are susceptible to various pests and diseases:",
+                    "- Jute hairy caterpillar",
+                    "- Stem rot",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when plants reach full maturity:",
+                    "- Indicated by the yellowing of leaves and shedding of flowers.",
+                    "Harvesting methods vary from manual cutting to using specialized tools."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain fiber quality:",
+                    "- Handle jute carefully to prevent contamination.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Jute cultivation is both economically and environmentally significant. By following best practices, farmers can enhance yield and fiber quality, contributing to the global jute supply."
+            }
+        },
+        {
+            "name": "Coffee",
+            "image": "/coffee.webp",
+            "description": "Coffee is a popular beverage crop known for its stimulating effect. It is widely grown in tropical regions.",
+            "type": "Perennial Crop",
+            "scientificName": "Coffea spp.",
+            "soilType": "Well-drained loamy soil",
+            "rainfall": "1500-2500 mm",
+            "temperature": "15-24°C",
+            "info": {
+                "overview": "Coffee is a popular beverage crop known for its stimulating effect due to caffeine content. It thrives in tropical climates with well-drained soil.",
+                "soilRequirements": [
+                    "Preferred Soil Type: Well-drained loamy soil",
+                    "pH Range: 6.0 to 6.5",
+                    "Organic Matter: High organic content promotes healthy growth",
+                    "Soil Preparation: Proper soil preparation ensures good root development."
+                ],
+                "climateAndRainfall": [
+                    "Optimal Temperature: 15°C to 24°C",
+                    "Rainfall: Requires 1500-2500 mm annually",
+                    "Sunlight: Prefers shaded sunlight for optimal growth",
+                    "Humidity: High humidity levels are suitable"
+                ],
+                "plantingMethods": [
+                    "Coffee is typically propagated through seeds or cuttings:",
+                    "- Direct Seeding: Sowing seeds directly into prepared soil.",
+                    "- Transplanting: Growing seedlings in a nursery and then transplanting them to the main field."
+                ],
+                "waterManagement": [
+                    "Coffee requires regular watering, especially during dry periods.",
+                    "Drip irrigation is often used to provide consistent moisture levels.",
+                    "Avoid waterlogging to prevent root diseases."
+                ],
+                "fertilization": [
+                    "Fertilizer Requirement: Based on soil testing, typically involves balanced nutrition:",
+                    "- Nitrogen (N): 100-150 kg/ha",
+                    "- Phosphorus (P2O5): 50-75 kg/ha",
+                    "- Potassium (K2O): 50-75 kg/ha",
+                    "Apply fertilizers before planting and during critical growth stages."
+                ],
+                "pestAndDiseaseManagement": [
+                    "Coffee crops are susceptible to various pests and diseases:",
+                    "- Coffee berry borer",
+                    "- Coffee leaf rust",
+                    "Integrated pest management (IPM) strategies:",
+                    "- Use of resistant varieties",
+                    "- Biological control",
+                    "- Judicious use of pesticides"
+                ],
+                "harvesting": [
+                    "Harvesting is typically done when coffee cherries reach full maturity:",
+                    "- Indicated by a change in color from green to red.",
+                    "Harvesting methods vary from manual picking to using mechanical harvesters."
+                ],
+                "postHarvestManagement": [
+                    "Proper post-harvest handling is essential to maintain bean quality:",
+                    "- Handle coffee cherries carefully to prevent bruising.",
+                    "- Store in cool, dry conditions to extend shelf life."
+                ],
+                "conclusion": "Coffee cultivation is both economically and culturally significant. By following best practices, farmers can enhance yield and bean quality, contributing to the global coffee supply."
+            }
+        }
+    ]
+}

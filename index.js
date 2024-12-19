@@ -271,10 +271,67 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
       return res.status(400).json({ error: "Unsupported file format" });
     }
 
+<<<<<<< HEAD
     const formData = new FormData();
     formData.append("image", req.file.buffer, {
       filename: `image${fileExtension}`,
       contentType: mimeType,
+=======
+  axios
+    .post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    .then((response) => {
+      let cropName = response.data.prediction.toLowerCase();
+
+      const diseaseDataPath = path.join(__dirname, "disease.json");
+
+      fs.readFile(diseaseDataPath, "utf8", (error, fileContent) => {
+        if (error) {
+          console.error("Error reading disease data file:", error);
+          return res.status(500).json({ error: "Unable to read disease data file" });
+        }
+
+        let diseaseData;
+        try {
+          diseaseData = JSON.parse(fileContent).disease;
+        } catch (parseError) {
+          console.error("Error parsing disease data file:", parseError);
+          return res.status(500).json({ error: "Error parsing disease data file" });
+        }
+        // console.log(diseaseData);
+        // diseaseData = diseaseData.disease[0];
+        // for (let d of diseaseData) {
+        //   console.log(d.name.replace(/_/g, '').toLowerCase()); // Replace underscores with a space
+        // }
+
+        cropName = cropName.replace(/_/g, '')
+
+        const matchedCrop = diseaseData.find((disease) => {
+          return disease.name.replace(/_/g, '').toLowerCase() === cropName;
+        });
+        
+        if (!matchedCrop) {
+          console.error(`Crop not found: ${cropName}`);
+          return res.status(404).json({ error: "Crop not found in disease data" });
+        }
+
+        const diseaseInfo = matchedCrop;
+        // console.log(diseaseInfo);
+        res.render("diseaseinfo.ejs", {
+          crop: diseaseInfo,
+          about: "about",
+          services: "services",
+          home: "home",
+        });
+      });
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).json({ error: "Error making prediction" });
+>>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
     });
 
     // Call Flask API
@@ -350,7 +407,11 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
 
 
 
+<<<<<<< HEAD
 // Yield Prediction Route
+=======
+
+>>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
 app.post("/yield_predict", (req, res) => {
   const inputData = {
     year: req.body.year,
@@ -372,9 +433,14 @@ app.post("/yield_predict", (req, res) => {
       res.status(500).json({ error: "Error making prediction" });
     });
 });
+<<<<<<< HEAD
 
 app.post("/predict", async (req, res) => {
   const inputData = {
+=======
+app.post("/predict", (req, res) => {
+ const inputData = {
+>>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
     N: req.body.Nitrogen,
     P: req.body.P,
     K: req.body.K,
@@ -383,6 +449,7 @@ app.post("/predict", async (req, res) => {
     ph: req.body.ph,
     rainfall: req.body.rainfall_In_mm,
   };
+<<<<<<< HEAD
 
   try {
     // Send data to the Flask API for prediction
@@ -409,6 +476,34 @@ app.post("/predict", async (req, res) => {
 });
 
 // Authentication Routes
+=======
+  axios
+    .post("https://harvest-horizon-backend.onrender.com/predict", inputData)
+    .then((response) => {
+      const cropName = response.data.prediction.toString().toLowerCase();
+      console.log(cropName);
+      fs.readFile(path.join(__dirname, "crops.json"), "utf8", (err, data) => {
+        if (err) return res.status(500).json({ error: "Internal server error" });
+        const crops = JSON.parse(data).crops;
+        const crop = crops.find((c) => c.name.toLowerCase() === cropName);
+        console.log(crop)
+        res.render("cropInfo.ejs", {
+          crop,
+          about: "about",
+          services: "services",
+          home: "home",
+        });
+      });
+      // res.json({ prediction: response.data.prediction });
+      console.log(response.data.prediction);
+    })
+    .catch((error) => {
+      console.error("Error calling Flask API:", error);
+      res.status(500).send("Error making prediction");
+    });
+});
+// User Authentication Routes
+>>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
 app.get("/signup", (req, res) => res.render("signup"));
 
 app.post("/signup", (req, res) => {

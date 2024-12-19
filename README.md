@@ -144,13 +144,9 @@ This project is licensed under the **MIT License**. You can find more informatio
 
 ## 🎥 **Video Showcase**
 
-<div align="center">
-  <video width="600" controls>
-    <source src="https://github.com/user-attachments/assets/96b3e1bc-3360-4817-bfac-08269552fc53" type="video/mp4">
-    
 
-  </video>
-</div>
+
+https://github.com/user-attachments/assets/a79b3b18-1456-4509-a025-a948109f66e2
 
 
 

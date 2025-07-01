@@ -275,8 +275,7 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
     formData.append("image", req.file.buffer, {
       filename: `image${fileExtension}`,
       contentType: mimeType,
-  axios
-    .post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
+  axios.post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

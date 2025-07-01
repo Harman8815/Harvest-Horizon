@@ -271,12 +271,10 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
       return res.status(400).json({ error: "Unsupported file format" });
     }
 
-<<<<<<< HEAD
     const formData = new FormData();
     formData.append("image", req.file.buffer, {
       filename: `image${fileExtension}`,
       contentType: mimeType,
-=======
   axios
     .post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
       headers: {
@@ -331,7 +329,6 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
     .catch((error) => {
       console.error(error);
       res.status(500).json({ error: "Error making prediction" });
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
     });
 
     // Call Flask API
@@ -407,11 +404,6 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
 
 
 
-<<<<<<< HEAD
-// Yield Prediction Route
-=======
-
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
 app.post("/yield_predict", (req, res) => {
   const inputData = {
     year: req.body.year,
@@ -433,14 +425,14 @@ app.post("/yield_predict", (req, res) => {
       res.status(500).json({ error: "Error making prediction" });
     });
 });
-<<<<<<< HEAD
+
 
 app.post("/predict", async (req, res) => {
   const inputData = {
-=======
+
 app.post("/predict", (req, res) => {
  const inputData = {
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
+
     N: req.body.Nitrogen,
     P: req.body.P,
     K: req.body.K,
@@ -449,7 +441,7 @@ app.post("/predict", (req, res) => {
     ph: req.body.ph,
     rainfall: req.body.rainfall_In_mm,
   };
-<<<<<<< HEAD
+
 
   try {
     // Send data to the Flask API for prediction
@@ -476,7 +468,7 @@ app.post("/predict", (req, res) => {
 });
 
 // Authentication Routes
-=======
+
   axios
     .post("https://harvest-horizon-backend.onrender.com/predict", inputData)
     .then((response) => {
@@ -503,7 +495,7 @@ app.post("/predict", (req, res) => {
     });
 });
 // User Authentication Routes
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
+
 app.get("/signup", (req, res) => res.render("signup"));
 
 app.post("/signup", (req, res) => {

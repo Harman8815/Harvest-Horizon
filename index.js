@@ -289,13 +289,13 @@ app.post("/predict", async (req, res) => {
 
   try {
     // Send data to the Flask API for prediction
-    const response = await axios.post("http://127.0.0.1:5000/predict", inputData);
+    const response = await axios.post("https://harvest-horizon-backend.onrender.com/predict", inputData);
     let cropName = response.data.prediction.toString().toLowerCase();
 
     console.log("Predicted Crop:", cropName);
     cropName = cropName.toString().toLowerCase();
     // Fetch crop details from another API
-    let cropResponse = await axios.get(`http://127.0.0.1:2000/api/crops/fetch-by-name/${cropName}`);
+    let cropResponse = await axios.get(`https://harvest-horizon-backend-db.onrender.com/api/crops/fetch-by-name/${cropName}`);
     let crop = cropResponse.data;
     // console.log(crop);
     // Render the EJS template with fetched crop details

@@ -278,8 +278,8 @@
             <p style="color: var(--text-muted);">Combining expertise in Machine Learning, Data Science, and Agronomy.
             </p>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4">
+          <div class="grid grid-cols-2" style="max-width: 900px; margin: 0 auto;">
+            <div class="team-card-wrapper">
               <div class="card text-center team-card">
                 <div style="position: relative; width: 151px; height: 151px; margin: 0 auto var(--space-lg);">
                   <div
@@ -290,12 +290,12 @@
                 </div>
                 <h4 class="mb-1">Harman Deep Singh</h4>
                 <p style="color: var(--secondary); font-weight: 700; font-size: 0.75rem; text-transform: uppercase;">
-                  Lead Developer & AI Architect</p>
-                <p style="color: var(--text-muted); font-size: 0.85rem;">Full-stack engineer specializing in
-                  agricultural ML and premium glassmorphic interfaces.</p>
+                  FrontEnd Developer & AI Architect</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem;">Full-stack web Developer focus on responsive
+                  designs.</p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="team-card-wrapper">
               <div class="card text-center team-card">
                 <div style="position: relative; width: 151px; height: 151px; margin: 0 auto var(--space-lg);">
                   <div
@@ -319,10 +319,14 @@
 
         <script>
           window.addEventListener('load', () => {
-            document.getElementById('loader').style.opacity = '0';
-            setTimeout(() => {
-              document.getElementById('loader').style.display = 'none';
-            }, 500);
+            const loader = document.getElementById('loader');
+            if (loader) {
+              loader.style.opacity = '0';
+              setTimeout(() => {
+                loader.style.display = 'none';
+                ScrollTrigger.refresh();
+              }, 500);
+            }
           });
 
           gsap.registerPlugin(ScrollTrigger);
@@ -331,13 +335,34 @@
           gsap.from(".hero-content > *", {
             opacity: 0,
             x: -30,
-            duration: 0.8,
+            duration: 1,
             stagger: 0.2,
-            ease: "power2.out"
+            ease: "expo.out"
           });
 
-          // Service Cards - Fixed Stability (use stagger but don't hide by default if already past)
-          gsap.utils.toArray(".service-card").forEach(card => {
+          // Service Cards - More robust entry
+          gsap.utils.toArray(".service-card").forEach((card, i) => {
+            gsap.from(card, {
+              scrollTrigger: {
+                trigger: card,
+                start: "top 95%",
+                toggleActions: "play none none none",
+                once: true // Only animate once
+              },
+              opacity: 0,
+              y: 40,
+              scale: 0.98,
+              duration: 0.8,
+              delay: i * 0.1, // Stagger based on index if multiple visible
+              ease: "power2.out",
+              onComplete: () => {
+                card.style.transform = "none"; // Clean up after animation
+              }
+            });
+          });
+
+          // Team Card animations - more robust
+          gsap.utils.toArray(".team-card").forEach((card, i) => {
             gsap.from(card, {
               scrollTrigger: {
                 trigger: card,
@@ -345,22 +370,12 @@
                 toggleActions: "play none none none"
               },
               opacity: 0,
-              y: 50,
-              duration: 0.6,
-              ease: "power1.out"
+              y: 40,
+              scale: 0.95,
+              duration: 1,
+              delay: i * 0.1,
+              ease: "power3.out"
             });
-          });
-
-          // Team Card animations
-          gsap.from(".team-card", {
-            scrollTrigger: {
-              trigger: "#team",
-              start: "top 80%"
-            },
-            opacity: 0,
-            scale: 0.9,
-            duration: 0.8,
-            stagger: 0.1
           });
 
           // Team image rotation style

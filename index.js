@@ -168,6 +168,20 @@ const FormData = require("form-data");
 
 
 
+// Helper for API Retries (Handles slow ML backend startup)
+const axiosRetry = async (config, retries = 3, backoff = 2000) => {
+  try {
+    return await axios(config);
+  } catch (err) {
+    if (retries > 0 && (err.code === 'ECONNREFUSED' || err.code === 'ETIMEDOUT')) {
+      console.warn(`Backend not ready, retrying in ${backoff}ms... (${retries} retries left)`);
+      await new Promise(resolve => setTimeout(resolve, backoff));
+      return axiosRetry(config, retries - 1, backoff * 1.5);
+    }
+    throw err;
+  }
+};
+
 app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No image file uploaded" });
@@ -184,33 +198,35 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
       contentType: mimeType,
     });
 
-    const response = await axios.post(`${BACKEND_BASE_URL}/predict-image`, formData, {
-      headers: { ...formData.getHeaders() }
+    const response = await axiosRetry({
+      method: 'post',
+      url: `${BACKEND_BASE_URL}/predict-image`,
+      data: formData,
+      headers: { ...formData.getHeaders() },
+      timeout: 30000 // 30s timeout for heavy models
     });
 
     const prediction = response.data.prediction.toLowerCase();
+    console.log(`Disease Prediction Result: ${prediction}`);
     const diseaseData = JSON.parse(fs.readFileSync(path.join(__dirname, "disease.json"), "utf8")).disease;
 
-    const matchedCrop = diseaseData.find(d =>
-      prediction.replace(/[^a-zA-Z0-9]/g, "").includes(d.name.replace(/[^a-zA-Z0-9]/g, "").toLowerCase())
-    ) || diseaseData[0];
+    const matchedCrop = diseaseData.find(d => {
+      const normalizedModelPred = prediction.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const normalizedDbName = d.name.toLowerCase().replace(/[^a-z0-9]/g, "");
+      return normalizedModelPred.includes(normalizedDbName) || normalizedDbName.includes(normalizedModelPred);
+    }) || diseaseData[0];
 
-    return res.render("diseaseinfo", {
-      crop: finalCrop,
-      about: "about",
-      services: "services",
-      home: "home"
-    });
+    return res.render("diseaseinfo", { crop: matchedCrop, about: "about", services: "services", home: "home" });
 
   } catch (error) {
     console.error("Prediction error:", error.message);
+    const errorMsg = error.response?.data?.details || error.response?.data?.error || error.message;
     res.render("error", {
-      errorDetails: `Disease prediction failed: ${error.response?.data?.error || error.message}`
+      errorDetails: `Disease prediction failed: ${errorMsg}`
     });
   }
 });
 
-// Yield Prediction Route
 app.post("/yield_predict", async (req, res) => {
   const inputData = {
     "Year": req.body.year,
@@ -222,7 +238,13 @@ app.post("/yield_predict", async (req, res) => {
   };
 
   try {
-    const response = await axios.post(`${BACKEND_BASE_URL}/predict-yield`, inputData);
+    console.log("Sending Yield Prediction payload:", inputData);
+    const response = await axiosRetry({
+      method: 'post',
+      url: `${BACKEND_BASE_URL}/predict-yield`,
+      data: inputData
+    });
+    console.log("Yield Prediction response:", response.data);
     res.json(response.data);
   } catch (error) {
     console.error("Yield API failed:", error.message);
@@ -233,7 +255,6 @@ app.post("/yield_predict", async (req, res) => {
   }
 });
 
-// Crop Prediction Route
 app.post("/predict", async (req, res) => {
   const inputData = {
     N: req.body.Nitrogen,
@@ -246,7 +267,13 @@ app.post("/predict", async (req, res) => {
   };
 
   try {
-    const response = await axios.post(`${BACKEND_BASE_URL}/predict`, inputData);
+    console.log("Sending Crop Prediction payload:", inputData);
+    const response = await axiosRetry({
+      method: 'post',
+      url: `${BACKEND_BASE_URL}/predict`,
+      data: inputData
+    });
+    console.log("Crop Prediction response:", response.data);
     const cropName = response.data.prediction.toString().toLowerCase();
 
     fs.readFile(path.join(__dirname, "crops.json"), "utf8", (err, data) => {

@@ -18,17 +18,27 @@ try:
     with open(os.path.join(BASE_DIR, "crop_prediction.pkl"), "rb") as f:
         crop_model = pickle.load(f)
 
-    with open(os.path.join(BASE_DIR, "yield_production.pkl"), "rb") as f:
+    with open(os.path.join(BASE_DIR, "dtr.pkl"), "rb") as f:
         yield_model = pickle.load(f)
     
     with open(os.path.join(BASE_DIR, "preprocessor.pkl"), "rb") as f:
         preprocessor = pickle.load(f)
 
-    # Load CNN model
-    cnn = tf.keras.models.load_model(os.path.join(BASE_DIR, 'trained_model.keras'))
+    # Load CNN model - Wrap in sub-try to allow server to start if CNN is missing
+    cnn = None
+    try:
+        model_path = os.path.join(BASE_DIR, 'trained_model.keras')
+        if os.path.exists(model_path):
+            cnn = tf.keras.models.load_model(model_path)
+            print("Successfully loaded CNN model.")
+        else:
+            print(f"Warning: {model_path} not found. Disease detection will be disabled.")
+    except Exception as cnn_err:
+        print(f"Error loading CNN model: {cnn_err}")
+
 except Exception as e:
-    print(f"Error loading models: {e}")
-    raise
+    print(f"Critical error loading primary models: {e}")
+    # Don't raise, let the server try to start
 
 app = Flask(__name__)
 
@@ -36,8 +46,20 @@ app = Flask(__name__)
 def predict():
     data = request.json
     try:
-        # Prepare data for prediction
-        input_data = pd.DataFrame([data])
+        print(f"Crop Prediction Input: {data}")
+        # Explicit feature mapping to ensure correct order and types
+        # Expected: N, P, K, temperature, humidity, ph, rainfall
+        features = {
+            'N': float(data.get('N', 0)),
+            'P': float(data.get('P', 0)),
+            'K': float(data.get('K', 0)),
+            'temperature': float(data.get('temperature', 25.0)),
+            'humidity': float(data.get('humidity', 70.0)),
+            'ph': float(data.get('ph', 7.0)),
+            'rainfall': float(data.get('rainfall', 100.0))
+        }
+        
+        input_data = pd.DataFrame([features])
         prediction = crop_model.predict(input_data)[0]
         return jsonify({"prediction": prediction})
     except Exception as e:

@@ -20,23 +20,37 @@
             <a href="/" class="nav-link">Home</a>
             <a href="/weather" class="nav-link">Weather</a>
             <a href="/crops" class="nav-link">Encyclopedia</a>
+            <a href="#team" class="nav-link">Innovators</a>
             <a href="/profile" class="btn btn-primary" style="margin-left: var(--space-xl); padding: 8px 20px;">
                 Dashboard
             </a>
         </div>
 
-        <button class="d-lg-none btn btn-outline" style="padding: 8px;">
+        <button id="mobile-toggle" class="d-lg-none btn btn-outline" style="padding: 8px;">
             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu d-lg-none">
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-nav-link">Home</a>
+            <a href="/weather" class="mobile-nav-link">Weather</a>
+            <a href="/crops" class="mobile-nav-link">Encyclopedia</a>
+            <a href="#team" class="mobile-nav-link">Innovators</a>
+            <a href="/profile" class="btn btn-primary" style="margin-top: 20px; width: 100%;">Dashboard</a>
+        </div>
     </div>
 </nav>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const currentPath = window.location.pathname;
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
 
         navLinks.forEach(link => {
             const linkPath = link.getAttribute('href');
@@ -44,6 +58,33 @@
                 link.classList.add('active');
             }
         });
+
+        // Mobile toggle logic
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                // Change icon
+                const icon = mobileToggle.querySelector('svg');
+                if (mobileMenu.classList.contains('active')) {
+                    icon.innerHTML = '<path d="M18 6L6 18M6 6l12 12"></path>';
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+                } else {
+                    icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"></path>';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close menu when clicking links
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                    const icon = mobileToggle.querySelector('svg');
+                    icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"></path>';
+                });
+            });
+        }
 
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');

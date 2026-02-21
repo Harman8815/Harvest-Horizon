@@ -1,4 +1,4 @@
-# 🌾 **Harvest Horizon** 🌾
+<img width="1920" height="957" alt="image" src="https://github.com/user-attachments/assets/e032d124-5d57-4fb9-896f-764dc9efe5e9" /># 🌾 **Harvest Horizon** 🌾
 
 <div align="center">
   <p><em>Transforming Agriculture with Machine Learning</em></p>
@@ -131,11 +131,12 @@ This project is licensed under the **MIT License**. You can find more informatio
 ---
 
 ## 🖼️ **Image Gallery**
-![Home](https://github.com/user-attachments/assets/0203271d-e983-4481-bb29-f5b3aa4a1a74)
-![Services](https://github.com/user-attachments/assets/015cb0aa-dbc8-4494-8eec-b885cd5773aa)
-![ScreenShot_20241211203332](https://github.com/user-attachments/assets/4af46bbd-e813-43df-afb7-5c07d6aaece5)
+![Home](https://github.com/user-attachments/assets/42ed5019-9273-4d63-b7a8-6383cdfd4ef3)
+<img width="1920" height="957" alt="image" src="https://github.com/user-attachments/assets/674886cc-a263-47aa-85f2-cdcafe6e7d86" />
+<img width="1920" height="1436" alt="screencapture-localhost-8081-crop-prediction-2026-02-21-14_27_22" src="https://github.com/user-attachments/assets/4abe94f2-f5ea-4caa-a95a-980bb4cb8768" />
+<img width="1920" height="2496" alt="screencapture-localhost-8081-predict-2026-02-21-14_28_13" src="https://github.com/user-attachments/assets/7db8bcb3-b0bc-48a5-95a8-7475755e25e3" />
+<img width="1920" height="3041" alt="screencapture-localhost-8081-crops-2026-02-21-14_29_45" src="https://github.com/user-attachments/assets/761af15a-988f-4247-80a2-c99f9e04de63" />
 
-![Crop Prediction](https://github.com/user-attachments/assets/465a8b08-8c31-4275-a9f9-3f8d8b6f4d9d)
 
 > A glimpse into the crop prediction feature, helping farmers choose the best crops.
 
@@ -146,7 +147,7 @@ This project is licensed under the **MIT License**. You can find more informatio
 
 
 
-https://github.com/user-attachments/assets/a79b3b18-1456-4509-a025-a948109f66e2
+https://github.com/user-attachments/assets/6315010e-bc40-4bc3-a5ad-60d7f8a19ef6
 
 
 

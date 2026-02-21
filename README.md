@@ -131,25 +131,25 @@ This project is licensed under the **MIT License**. You can find more informatio
 ---
 
 ## 🖼️ **Image Gallery**
+![Home](https://github.com/user-attachments/assets/0203271d-e983-4481-bb29-f5b3aa4a1a74)
+![Services](https://github.com/user-attachments/assets/015cb0aa-dbc8-4494-8eec-b885cd5773aa)
+![ScreenShot_20241211203332](https://github.com/user-attachments/assets/4af46bbd-e813-43df-afb7-5c07d6aaece5)
 
-![Crop Prediction](path_to_image/crop_prediction.png)
+![Crop Prediction](https://github.com/user-attachments/assets/465a8b08-8c31-4275-a9f9-3f8d8b6f4d9d)
 
 > A glimpse into the crop prediction feature, helping farmers choose the best crops.
 
-![Yield Prediction](path_to_image/yield_prediction.png)
-
-> Visuals showing the results of yield prediction, helping farmers plan for optimal harvest.
 
 ---
 
 ## 🎥 **Video Showcase**
 
-<div align="center">
-  <video width="600" controls>
-    <source src="path_to_video/project_demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+
+
+https://github.com/user-attachments/assets/a79b3b18-1456-4509-a025-a948109f66e2
+
+
+
 
 ---
 

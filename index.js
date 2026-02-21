@@ -166,6 +166,8 @@ app.get("/crop_disease_prediction", (req, res) => {
 const mime = require("mime-types");
 const FormData = require("form-data");
 
+
+
 app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No image file uploaded" });
@@ -193,12 +195,13 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
       prediction.replace(/[^a-zA-Z0-9]/g, "").includes(d.name.replace(/[^a-zA-Z0-9]/g, "").toLowerCase())
     ) || diseaseData[0];
 
-    res.render("diseaseinfo", {
-      crop: matchedCrop,
+    return res.render("diseaseinfo", {
+      crop: finalCrop,
       about: "about",
       services: "services",
       home: "home"
     });
+
   } catch (error) {
     console.error("Prediction error:", error.message);
     res.render("error", {

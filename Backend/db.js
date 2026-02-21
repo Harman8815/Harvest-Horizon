@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI='mongodb://localhost:27017/HarvestHorizon';
+const mongoURI='mongodb+srv://HarmanDeep:MQacNdu6ldzVigIY@cluster0.8rztr8n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const connectToMongodb =()=>{
     mongoose.connect(mongoURI)
        .then(() => console.log('MongoDB Connected...'))

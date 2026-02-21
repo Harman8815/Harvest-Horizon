@@ -20,6 +20,9 @@ try:
 
     with open(os.path.join(BASE_DIR, "yield_production.pkl"), "rb") as f:
         yield_model = pickle.load(f)
+    
+    with open(os.path.join(BASE_DIR, "preprocessor.pkl"), "rb") as f:
+        preprocessor = pickle.load(f)
 
     # Load CNN model
     cnn = tf.keras.models.load_model(os.path.join(BASE_DIR, 'trained_model.keras'))
@@ -38,8 +41,47 @@ def predict():
         prediction = crop_model.predict(input_data)[0]
         return jsonify({"prediction": prediction})
     except Exception as e:
-        # Log the error and send a failure response
         print(f"Error during crop prediction: {str(e)}")
+        return jsonify({"error": "Prediction failed", "details": str(e)}), 500
+
+@app.route("/predict-yield", methods=["POST"])
+def predict_yield():
+    data = request.json
+    try:
+        # Define the exact column order expected by the preprocessor/model
+        # Most yield models for this dataset expect: Item, Year, Rainfall, Pesticides, Temp
+        # Note: 'Area' is often not a feature in the base dataset, or used differently.
+        
+        # The model expects exactly 6 features in this order:
+        # ['Year', 'average_rain_fall_mm_per_year', 'pesticides_tonnes', 'avg_temp', 'Area', 'Item']
+        
+        features = {
+            'Year': int(data.get('Year')),
+            'average_rain_fall_mm_per_year': float(data.get('average_rain_fall_mm_per_year')),
+            'pesticides_tonnes': float(data.get('pesticides_tonnes')),
+            'avg_temp': float(data.get('avg_temp')),
+            'Area': 'India', # Defaulting to India as the geographic training area
+            'Item': str(data.get('Item'))
+        }
+        
+        # Create DataFrame with explicit column sequence
+        input_df = pd.DataFrame([features])
+        
+        # Transform and Predict
+        transformed_df = preprocessor.transform(input_df)
+        prediction = yield_model.predict(transformed_df)[0]
+        
+        return jsonify({"prediction": float(prediction)})
+    except ValueError as ve:
+        # Handle the specific 'unknown categories' error gracefully
+        print(f"Validation Error: {str(ve)}")
+        return jsonify({
+            "error": "Invalid Input", 
+            "details": f"The crop '{data.get('Item')}' is not in our historical yield database. Please try common crops like Wheat, Rice, or Maize."
+        }), 400
+    except Exception as e:
+        print(f"Error during yield prediction: {str(e)}")
+        print(traceback.format_exc())
         return jsonify({"error": "Prediction failed", "details": str(e)}), 500
 
 

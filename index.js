@@ -9,8 +9,20 @@ const multer = require("multer");
 const { Blob } = require("buffer");
 
 const app = express();
-const port = 8080;
+const port = 8081;
 const WEATHER_API_KEY = "f6484f00a0078d8b688fe7fb289d6500";
+
+// Load Environment Variables
+require('dotenv').config();
+
+// Determine Backend URL based on .env configuration
+const getBackendUrl = () => {
+  const isLocal = process.env.USE_LOCAL_BACKEND === 'true';
+  return isLocal ? process.env.LOCAL_BACKEND_URL : process.env.PRODUCTION_BACKEND_URL;
+};
+
+const BACKEND_BASE_URL = getBackendUrl();
+console.log(`Initialized with Backend URL: ${BACKEND_BASE_URL}`);
 
 // -------------------------- Configuration --------------------------
 app.set("view engine", "ejs");
@@ -91,109 +103,6 @@ app.get("/", async (req, res) => {
   const weatherDataArray = await Promise.all(
     cities.map((city) => getWeatherData(city.name, city.country))
   );
-  // [
-    // [0]   {
-    // [0]     error: 'request to https://api.openweathermap.org/data/2.5/weather?q=Gwalior,India&lang=en&units=metric&appid=f6484f00a0078d8b688fe7fb289d6500 failed, reason: read ECONNRESET'
-    // [0]   },
-    // [0]   {
-    // [0]     error: 'request to https://api.openweathermap.org/data/2.5/weather?q=New%20York,USA&lang=en&units=metric&appid=f6484f00a0078d8b688fe7fb289d6500 failed, reason: read ECONNRESET'
-    // [0]   },
-    // [0]   {
-    // [0]     error: 'request to https://api.openweathermap.org/data/2.5/weather?q=London,UK&lang=en&units=metric&appid=f6484f00a0078d8b688fe7fb289d6500 failed, reason: read ECONNRESET'
-    // [0]   }
-    // [0] ]
-  // if(weatherDataArray.error){
-  //   weatherDataArray=[
-  //     [0]   {
-  //     [0]     coord: { lon: 78.1792, lat: 26.2236 },
-  //     [0]     weather: [ [Object] ],
-  //     [0]     base: 'stations',
-  //     [0]     main: {
-  //     [0]       temp: 14.6,
-  //     [0]       feels_like: 12.82,
-  //     [0]       temp_min: 14.6,
-  //     [0]       temp_max: 14.6,
-  //     [0]       pressure: 1021,
-  //     [0]       humidity: 27,
-  //     [0]       sea_level: 1021,
-  //     [0]       grnd_level: 994
-  //     [0]     },
-  //     [0]     visibility: 10000,
-  //     [0]     wind: { speed: 2.85, deg: 315, gust: 4.02 },
-  //     [0]     clouds: { all: 40 },
-  //     [0]     dt: 1734063495,
-  //     [0]     sys: { country: 'IN', sunrise: 1734053170, sunset: 1734091024 },
-  //     [0]     timezone: 19800,
-  //     [0]     id: 1270583,
-  //     [0]     name: 'Gwalior',
-  //     [0]     cod: 200,
-  //     [0]     icon: 'clouds.svg'
-  //     [0]   },
-  //     [0]   {
-  //     [0]     coord: { lon: -74.006, lat: 40.7143 },
-  //     [0]     weather: [ [Object] ],
-  //     [0]     base: 'stations',
-  //     [0]     main: {
-  //     [0]       temp: -1.25,
-  //     [0]       feels_like: -6.56,
-  //     [0]       temp_min: -2.88,
-  //     [0]       temp_max: -0.44,
-  //     [0]       pressure: 1032,
-  //     [0]       humidity: 42,
-  //     [0]       sea_level: 1032,
-  //     [0]       grnd_level: 1030
-  //     [0]     },
-  //     [0]     visibility: 10000,
-  //     [0]     wind: { speed: 5.14, deg: 280 },
-  //     [0]     clouds: { all: 0 },
-  //     [0]     dt: 1734063364,
-  //     [0]     sys: {
-  //     [0]       type: 1,
-  //     [0]       id: 4610,
-  //     [0]       country: 'US',
-  //     [0]       sunrise: 1734005473,
-  //     [0]       sunset: 1734038937
-  //     [0]     },
-  //     [0]     timezone: -18000,
-  //     [0]     id: 5128581,
-  //     [0]     name: 'New York',
-  //     [0]     cod: 200,
-  //     [0]     icon: 'sun.svg'
-  //     [0]   },
-  //     [0]   {
-  //     [0]     coord: { lon: -0.1257, lat: 51.5085 },
-  //     [0]     weather: [ [Object] ],
-  //     [0]     base: 'stations',
-  //     [0]     main: {
-  //     [0]       temp: 6.14,
-  //     [0]       feels_like: 4.64,
-  //     [0]       temp_min: 5.57,
-  //     [0]       temp_max: 7.1,
-  //     [0]       pressure: 1027,
-  //     [0]       humidity: 95,
-  //     [0]       sea_level: 1027,
-  //     [0]       grnd_level: 1022
-  //     [0]     },
-  //     [0]     visibility: 3500,
-  //     [0]     wind: { speed: 2.06, deg: 90 },
-  //     [0]     clouds: { all: 100 },
-  //     [0]     dt: 1734063279,
-  //     [0]     sys: {
-  //     [0]       type: 2,
-  //     [0]       id: 2075535,
-  //     [0]       country: 'GB',
-  //     [0]       sunrise: 1734076704,
-  //     [0]       sunset: 1734105088
-  //     [0]     },
-  //     [0]     timezone: 0,
-  //     [0]     id: 2643743,
-  //     [0]     name: 'London',
-  //     [0]     cod: 200,
-  //     [0]     icon: 'atmosphere.svg'
-  //     [0]   }
-  //     [0] ]
-  // }
-  // console.log(weatherDataArray)
   res.render("main", { weatherDataArray });
 
 });
@@ -254,7 +163,7 @@ app.get("/crop_disease_prediction", (req, res) => {
   res.render("crop disease", { about: "about", services: "services", home: "home" });
 });
 
-const mime = require("mime-types"); // For getting MIME type from file extensions
+const mime = require("mime-types");
 const FormData = require("form-data");
 
 app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
@@ -263,184 +172,67 @@ app.post("/crop_disease_predict", upload.single("image"), async (req, res) => {
   }
 
   try {
-    // Extract file information
     const fileExtension = path.extname(req.file.originalname);
     const mimeType = mime.lookup(fileExtension);
+    if (!mimeType) return res.status(400).json({ error: "Unsupported file format" });
 
-    if (!mimeType) {
-      return res.status(400).json({ error: "Unsupported file format" });
-    }
-
-<<<<<<< HEAD
     const formData = new FormData();
     formData.append("image", req.file.buffer, {
       filename: `image${fileExtension}`,
       contentType: mimeType,
-=======
-  axios
-    .post("https://harvest-horizon-backend.onrender.com/predict-image", formData, {
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    })
-    .then((response) => {
-      let cropName = response.data.prediction.toLowerCase();
-
-      const diseaseDataPath = path.join(__dirname, "disease.json");
-
-      fs.readFile(diseaseDataPath, "utf8", (error, fileContent) => {
-        if (error) {
-          console.error("Error reading disease data file:", error);
-          return res.status(500).json({ error: "Unable to read disease data file" });
-        }
-
-        let diseaseData;
-        try {
-          diseaseData = JSON.parse(fileContent).disease;
-        } catch (parseError) {
-          console.error("Error parsing disease data file:", parseError);
-          return res.status(500).json({ error: "Error parsing disease data file" });
-        }
-        // console.log(diseaseData);
-        // diseaseData = diseaseData.disease[0];
-        // for (let d of diseaseData) {
-        //   console.log(d.name.replace(/_/g, '').toLowerCase()); // Replace underscores with a space
-        // }
-
-        cropName = cropName.replace(/_/g, '')
-
-        const matchedCrop = diseaseData.find((disease) => {
-          return disease.name.replace(/_/g, '').toLowerCase() === cropName;
-        });
-        
-        if (!matchedCrop) {
-          console.error(`Crop not found: ${cropName}`);
-          return res.status(404).json({ error: "Crop not found in disease data" });
-        }
-
-        const diseaseInfo = matchedCrop;
-        // console.log(diseaseInfo);
-        res.render("diseaseinfo.ejs", {
-          crop: diseaseInfo,
-          about: "about",
-          services: "services",
-          home: "home",
-        });
-      });
-    })
-    .catch((error) => {
-      console.error(error);
-      res.status(500).json({ error: "Error making prediction" });
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
     });
 
-    // Call Flask API
-    const flaskResponse = await axios.post("http://127.0.0.1:5000/predict-image", formData, {
-      headers: { ...formData.getHeaders() },
+    const response = await axios.post(`${BACKEND_BASE_URL}/predict-image`, formData, {
+      headers: { ...formData.getHeaders() }
     });
 
-    const cropName = flaskResponse.data.prediction.toLowerCase();
+    const prediction = response.data.prediction.toLowerCase();
+    const diseaseData = JSON.parse(fs.readFileSync(path.join(__dirname, "disease.json"), "utf8")).disease;
 
-    // Define the array of valid crop names
-    const names = [
-      "cedar_apple_rust",
-      "healthy",
-      "blueberry_healthy",
-      "powdery_mildew",
-      "cherry_healthy",
-      "cercospora_leaf_spot_gray_leaf_spot",
-      "common_rust",
-      "northern_leaf_blight",
-      "corn_healthy",
-      "black_rot",
-      "esca_black_measles",
-      "leaf_blight_isariopsis_leaf_spot",
-      "grape_healthy",
-      "haunglongbing_citrus_greening",
-      "bacterial_spot_peach",
-      "peach_healthy",
-      "bacterial_spot_pepper_bell",
-      "pepper_bell_healthy",
-      "potato_early_blight",
-      "potato_late_blight",
-      "potato_healthy",
-      "raspberry_healthy",
-      "soybean_healthy",
-      "squash_powdery_mildew",
-      "strawberry_leaf_scorch",
-      "strawberry_healthy",
-      "tomato_bacterial_spot",
-      "tomato_early_blight",
-      "tomato_late_blight",
-      "tomato_leaf_mold",
-      "tomato_septoria_leaf_spot",
-      "tomato_spider_mites",
-      "tomato_target_spot",
-      "tomato_tomato_yellow_leaf_curl_virus",
-      "tomato_tomato_mosaic_virus",
-      "tomato_healthy"
-    ];
-
-    // Normalize and find the closest match
-    const matchedName = names.find((name) =>
-      cropName.replace(/[^a-zA-Z0-9]/g, "_").includes(name)
-    );
-
-    const finalName = matchedName || names[Math.floor(Math.random() * names.length)];
-    // console.log("Matched Name:", finalName);
-
-    // Fetch details using the matched name
-    const apiResponse = await axios.get(`http://localhost:2000/api/diseases/fetch-by-name/${finalName}`);
-    const matchedCrop = apiResponse.data;
+    const matchedCrop = diseaseData.find(d =>
+      prediction.replace(/[^a-zA-Z0-9]/g, "").includes(d.name.replace(/[^a-zA-Z0-9]/g, "").toLowerCase())
+    ) || diseaseData[0];
 
     res.render("diseaseinfo", {
       crop: matchedCrop,
       about: "about",
       services: "services",
-      home: "home",
+      home: "home"
     });
   } catch (error) {
-    console.error("Error:", error.message || error);
-    res.status(500).json({ error: "Error making prediction or fetching disease data" });
+    console.error("Prediction error:", error.message);
+    res.render("error", {
+      errorDetails: `Disease prediction failed: ${error.response?.data?.error || error.message}`
+    });
   }
 });
 
-
-
-<<<<<<< HEAD
 // Yield Prediction Route
-=======
-
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
-app.post("/yield_predict", (req, res) => {
+app.post("/yield_predict", async (req, res) => {
   const inputData = {
-    year: req.body.year,
-    average_rainfall: req.body.average_rain_fall_mm_per_year,
-    pesticides: req.body.pesticides_tonnes,
-    avg_temp: req.body.avg_temp,
-    area: req.body.area,
-    item: req.body.item,
+    "Year": req.body.year,
+    "average_rain_fall_mm_per_year": req.body.average_rain_fall_mm_per_year,
+    "pesticides_tonnes": req.body.pesticides_tonnes,
+    "avg_temp": req.body.avg_temp,
+    "Area": req.body.area,
+    "Item": req.body.item,
   };
 
-  axios
-    .post("https://harvest-horizon-backend.onrender.com/predict-yield", inputData)
-    .then((response) => {
-      console.log(response);
-      res.json(response);
-    })
-    .catch((error) => {
-      console.error("Error calling Flask API:", error);
-      res.status(500).json({ error: "Error making prediction" });
+  try {
+    const response = await axios.post(`${BACKEND_BASE_URL}/predict-yield`, inputData);
+    res.json(response.data);
+  } catch (error) {
+    console.error("Yield API failed:", error.message);
+    res.status(500).json({
+      error: "Error making prediction",
+      details: error.response?.data?.details || error.message
     });
+  }
 });
-<<<<<<< HEAD
 
+// Crop Prediction Route
 app.post("/predict", async (req, res) => {
   const inputData = {
-=======
-app.post("/predict", (req, res) => {
- const inputData = {
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
     N: req.body.Nitrogen,
     P: req.body.P,
     K: req.body.K,
@@ -449,61 +241,27 @@ app.post("/predict", (req, res) => {
     ph: req.body.ph,
     rainfall: req.body.rainfall_In_mm,
   };
-<<<<<<< HEAD
 
   try {
-    // Send data to the Flask API for prediction
-    const response = await axios.post("http://127.0.0.1:5000/predict", inputData);
-    let cropName = response.data.prediction.toString().toLowerCase();
+    const response = await axios.post(`${BACKEND_BASE_URL}/predict`, inputData);
+    const cropName = response.data.prediction.toString().toLowerCase();
 
-    console.log("Predicted Crop:", cropName);
-    cropName = cropName.toString().toLowerCase();
-    // Fetch crop details from another API
-    let cropResponse = await axios.get(`http://127.0.0.1:2000/api/crops/fetch-by-name/${cropName}`);
-    let crop = cropResponse.data;
-    // console.log(crop);
-    // Render the EJS template with fetched crop details
-    res.render("cropInfo.ejs", {
-      crop,
-      about: "about",
-      services: "services",
-      home: "home",
+    fs.readFile(path.join(__dirname, "crops.json"), "utf8", (err, data) => {
+      if (err) throw new Error("Internal filesystem error");
+      const crops = JSON.parse(data).crops;
+      const crop = crops.find((c) => c.name.toLowerCase() === cropName);
+      if (!crop) throw new Error("Predicted crop not found in database");
+      res.render("cropInfo.ejs", { crop, about: "about", services: "services", home: "home" });
     });
   } catch (error) {
-    console.error("Error:", error.message || error);
-    res.status(500).send("An error occurred while processing the request.");
+    console.error("Crop API failed:", error.message);
+    res.render("error", {
+      errorDetails: `Crop recommendation failed: ${error.response?.data?.error || error.message}`
+    });
   }
 });
 
-// Authentication Routes
-=======
-  axios
-    .post("https://harvest-horizon-backend.onrender.com/predict", inputData)
-    .then((response) => {
-      const cropName = response.data.prediction.toString().toLowerCase();
-      console.log(cropName);
-      fs.readFile(path.join(__dirname, "crops.json"), "utf8", (err, data) => {
-        if (err) return res.status(500).json({ error: "Internal server error" });
-        const crops = JSON.parse(data).crops;
-        const crop = crops.find((c) => c.name.toLowerCase() === cropName);
-        console.log(crop)
-        res.render("cropInfo.ejs", {
-          crop,
-          about: "about",
-          services: "services",
-          home: "home",
-        });
-      });
-      // res.json({ prediction: response.data.prediction });
-      console.log(response.data.prediction);
-    })
-    .catch((error) => {
-      console.error("Error calling Flask API:", error);
-      res.status(500).send("Error making prediction");
-    });
-});
 // User Authentication Routes
->>>>>>> c9b85a2662c0008405cce7139346790c1a7829d1
 app.get("/signup", (req, res) => res.render("signup"));
 
 app.post("/signup", (req, res) => {
@@ -511,7 +269,7 @@ app.post("/signup", (req, res) => {
   if (!users.some((user) => user.username === username)) {
     users.push({ username, password });
     req.session.user = { username };
-    res.redirect("/dashboard");
+    res.redirect("/profile");
   } else {
     res.send("User already exists. Please sign in.");
   }
@@ -539,6 +297,10 @@ app.get("/profile", isAuthenticated, (req, res) => {
 app.get("/logout", (req, res) => {
   req.session.destroy();
   res.redirect("/signin");
+});
+
+app.get("/error", (req, res) => {
+  res.render("error", { errorDetails: req.query.details || "An unknown error occurred." });
 });
 
 app.get("/hashmapedit", (req, res) => {

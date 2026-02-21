@@ -1,229 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harvest Horizon</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+
+<head>
+  <%- include('partials/head') %>
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
+      .weather-container {
+        min-height: calc(100vh - 80px);
+        padding: var(--space-3xl) 0;
+        background: radial-gradient(circle at top right, #e3f2fd, var(--background));
       }
 
-      body::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, and Opera */
+      .search-area {
+        max-width: 800px;
+        margin: 0 auto var(--space-3xl);
       }
 
-      .navbar-brand {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 0;
-      }
-
-      .navbar-nav .nav-link {
-        color: #ffffff !important;
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin-left: 1rem;
-      }
-
-      .navbar-nav .nav-link:hover {
-        color: #0dfd24 !important;
-      }
-
-      /* Style for the footer */
-      .footer {
-        background-color: #343a40;
-      }
-
-      /* Ensure the weather info is centered vertically */
-      section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      .weather-hero-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
         align-items: center;
-        height: 100vh;
+        margin-bottom: var(--space-3xl);
+      }
+
+      .weather-card-hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #2e7d32 100%);
+        border-radius: var(--radius-xl);
+        padding: var(--space-3xl);
+        color: white;
+        box-shadow: var(--shadow-lg);
+        position: relative;
+        overflow: hidden;
+        display: none;
+        /* Shown after fetch */
+      }
+
+      .weather-card-hero::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
+
+      .stat-box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: var(--space-lg);
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+      }
+
+      #loading-overlay {
+        display: none;
+        text-align: center;
+        padding: var(--space-2xl);
+      }
+
+      .weather-illustration {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto var(--space-lg);
+      }
+
+      .popular-cities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: var(--space-lg);
+        margin-top: var(--space-2xl);
+      }
+
+      .city-pill {
+        background: white;
+        padding: var(--space-md);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        cursor: pointer;
+        transition: var(--transition);
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .city-pill:hover {
+        transform: translateY(-5px);
+        border-color: var(--primary);
+        box-shadow: var(--shadow-md);
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <!-- Website Name (Left) -->
-        <a class="navbar-brand" href="/">Harvest Horizon</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <!-- Navbar Links (Right) -->
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/crops">Crops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#contactus">Contact-Us</a>
-            </li>
-            <!-- Profile Icon (Right End) -->
-            <li class="nav-item">
-              <a class="nav-link" href="/profile">
-                <svg
-                  xmlns="img/weathericons/sun.svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-person-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
+<body>
+  <%- include('partials/navbar') %>
+
+    <div class="weather-container">
+      <div class="container">
+        <div class="search-area">
+          <div class="weather-hero-layout d-none d-lg-grid">
+            <div>
+              <h1 class="display-4 font-bold mb-3" style="color: var(--primary-dark);">Climate Radar</h1>
+              <p class="text-muted lead">Track localized atmospheric data across the globe. Our weather models process
+                real-time satellite telemetry for agricultural precision.</p>
+            </div>
+            <div class="text-center">
+              <div
+                style="background: white; padding: var(--space-xl); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);">
+                <div class="d-flex" style="gap: 12px; margin-bottom: 20px;">
+                  <input type="text" id="city" class="form-input" placeholder="Enter City (e.g. New Delhi)"
+                    style="flex: 1;">
+                </div>
+                <div class="d-flex" style="gap: 12px;">
+                  <input type="text" id="country" class="form-input" placeholder="Country (e.g. India)"
+                    style="flex: 1;">
+                  <button onclick="getWeather()" class="btn btn-primary" style="padding: 12px 30px;">Analyze</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Only Search -->
+          <div class="d-lg-none text-center mb-5">
+            <h1>Climate Radar</h1>
+            <div class="card mt-4">
+              <input type="text" id="city-mob" class="form-input mb-3" placeholder="City">
+              <input type="text" id="country-mob" class="form-input mb-3" placeholder="Country">
+              <button onclick="getWeather(true)" class="btn btn-primary w-100">Analyze Sky</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
 
-    <section class="vh-100 d-flex flex-column">
-      <!-- Location Input Section -->
-      <div
-        id="location"
-        class="d-flex justify-content-center align-items-center"
-        style="height: 20vh"
-      >
-        <input
-          type="text"
-          id="country"
-          class="form-control me-2"
-          placeholder="Country"
-          style="max-width: 200px"
-        />
-        <input
-          type="text"
-          id="city"
-          class="form-control me-2"
-          placeholder="City"
-          style="max-width: 200px"
-        />
-        <input
-          type="submit"
-          id="check"
-          class="btn btn-dark"
-          value="Go"
-          onclick="getWeather()"
-        />
-      </div>
+        <div id="loading-overlay">
+          <div class="spinner mx-auto mb-3"></div>
+          <p>Establishing Satellite Connection...</p>
+        </div>
 
-      <!-- Weather Info Card Section -->
-      <div
-        class="flex-grow-1 d-flex justify-content-center align-items-center"
-        style="overflow-y: auto"
-      >
-        <div class="card" style="width: 300px">
-          <img
-            src="/img/weathericons/sun.svg"
-            id="image"
-            class="card-img-top img-fluid"
-            alt="Weather Image"
-            style="max-height: 150px; "
-          />
-          <div class="card-body">
-            <h2 id="weatherCountry">London</h2>
-            <h2 id="temperature">15°<strong>C</strong></h2>
-            <h2 id="weatherDescription">Cloudy</h2>
-            <ul class="list-unstyled">
-              <li id="feelsLike">Feels Like 14°C</li>
-              <li id="humidity">Humidity 75%</li>
-              <li id="longitude">Longitude -0.1276</li>
-              <li id="latitude">Latitude 51.5074</li>
-            </ul>
+        <div id="weather-result" class="weather-card-hero">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <div class="d-flex align-items-center mb-3" style="gap: 12px;">
+                <span style="font-size: 2.5rem;">📡</span>
+                <div>
+                  <h2 id="location-name" style="color: white; margin: 0; font-family: var(--font-heading);">Location
+                  </h2>
+                  <span id="location-country" style="opacity: 0.8; font-weight: 600;">Country</span>
+                </div>
+              </div>
+              <h1 id="temp-display"
+                style="font-size: 6rem; color: white; margin-bottom: 0; font-family: var(--font-heading); font-weight: 800;">
+                --°C</h1>
+              <p id="desc-display" class="lead text-capitalize" style="opacity: 0.9; font-weight: 500;">Weather
+                description</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="/img/weathericons/sun.svg" id="weather-icon" class="weather-illustration" alt="Weather"
+                style="filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4 mt-5">
+            <div class="stat-box">
+              <small style="opacity: 0.8; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px;">FEELS LIKE</small>
+              <h3 id="feels-like" style="color: white; margin-top: 5px;">--°C</h3>
+            </div>
+            <div class="stat-box">
+              <small style="opacity: 0.8; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px;">HUMIDITY</small>
+              <h3 id="humidity" style="color: white; margin-top: 5px;">--%</h3>
+            </div>
+            <div class="stat-box">
+              <small style="opacity: 0.8; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px;">WIND SPEED</small>
+              <h3 id="wind-speed" style="color: white; margin-top: 5px;">-- m/s</h3>
+            </div>
+            <div class="stat-box">
+              <small style="opacity: 0.8; font-weight: 700; font-size: 0.7rem; letter-spacing: 1px;">COORDINATES</small>
+              <h3 id="coords" style="color: white; font-size: 0.9rem; margin-top: 5px;">--</h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="initial-view">
+          <h4 class="mb-4" style="color: var(--primary-dark);">Recommended for Monitoring</h4>
+          <div class="popular-cities">
+            <div class="city-pill" onclick="quickLook('Gwalior', 'India')">
+              <div style="font-size: 1.5rem; margin-bottom: 5px;">🏢</div>
+              <strong>Gwalior</strong><br><small class="text-muted">India</small>
+            </div>
+            <div class="city-pill" onclick="quickLook('London', 'UK')">
+              <div style="font-size: 1.5rem; margin-bottom: 5px;">🇬🇧</div>
+              <strong>London</strong><br><small class="text-muted">UK</small>
+            </div>
+            <div class="city-pill" onclick="quickLook('New York', 'USA')">
+              <div style="font-size: 1.5rem; margin-bottom: 5px;">🗽</div>
+              <strong>New York</strong><br><small class="text-muted">USA</small>
+            </div>
+            <div class="city-pill" onclick="quickLook('Tokyo', 'Japan')">
+              <div style="font-size: 1.5rem; margin-bottom: 5px;">🗼</div>
+              <strong>Tokyo</strong><br><small class="text-muted">Japan</small>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer Section -->
-    <footer class="footer bg-dark text-white py-4">
-      <div class="container text-center">
-        <p>&copy; 2024 Website Name. All rights reserved.</p>
-        <p>
-          <a href="#" class="text-white">Privacy Policy</a> |
-          <a href="#" class="text-white">Terms of Service</a>
-        </p>
-      </div>
-    </footer>
-
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-      async function getWeather() {
-        const country = document.getElementById("country").value.trim();
-        const city = document.getElementById("city").value.trim();
-        if (!country || !city) {
-          alert("Please enter both country and city.");
-          return;
-        }
+      async function quickLook(city, country) {
+        document.getElementById('city').value = city;
+        document.getElementById('country').value = country;
+        getWeather();
+      }
 
-        const response = await fetch(
-          `/getweather?city=${encodeURIComponent(
-            city
-          )}&country=${encodeURIComponent(country)}`
-        );
-        const data = await response.json();
+      async function getWeather(isMobile = false) {
+        const city = isMobile ? document.getElementById('city-mob').value.trim() : document.getElementById('city').value.trim();
+        const country = isMobile ? document.getElementById('country-mob').value.trim() : document.getElementById('country').value.trim();
 
-        // Update weather information in the UI
-        if (data.error) {
-          alert(data.error);
-        } else {
-          document.getElementById("weatherCountry").innerText = data.name;
-          document.getElementById(
-            "temperature"
-          ).innerHTML = `${data.main.temp}°<strong>C</strong>`;
-          document.getElementById("weatherDescription").innerText =
-            data.weather[0].description;
-          document.getElementById(
-            "feelsLike"
-          ).innerText = `Feels Like ${data.main.feels_like}°C`;
-          document.getElementById(
-            "humidity"
-          ).innerText = `Humidity ${data.main.humidity}%`;
-          document.getElementById(
-            "longitude"
-          ).innerText = `Longitude ${data.coord.lon}`;
-          document.getElementById(
-            "latitude"
-          ).innerText = `Latitude ${data.coord.lat}`;
-          const iconName = data.icon;
-          document.getElementById(
-            "image"
-          ).src = `/img/weathericons/${iconName}`;
+        if (!city || !country) return alert('Please enter both city and country');
+
+        const resultDiv = document.getElementById('weather-result');
+        const loader = document.getElementById('loading-overlay');
+        const initialView = document.getElementById('initial-view');
+
+        resultDiv.style.display = 'none';
+        initialView.style.display = 'none';
+        loader.style.display = 'block';
+
+        try {
+          const response = await fetch(`/getweather?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}`);
+          const data = await response.json();
+
+          if (data.error) {
+            alert(data.error);
+            initialView.style.display = 'block';
+          } else {
+            document.getElementById('location-name').innerText = data.name;
+            document.getElementById('location-country').innerText = data.sys.country;
+            document.getElementById('temp-display').innerText = `${Math.round(data.main.temp)}°C`;
+            document.getElementById('desc-display').innerText = data.weather[0].description;
+            document.getElementById('feels-like').innerText = `${Math.round(data.main.feels_like)}°C`;
+            document.getElementById('humidity').innerText = `${data.main.humidity}%`;
+            document.getElementById('wind-speed').innerText = `${data.wind.speed} m/s`;
+            document.getElementById('coords').innerText = `${data.coord.lat.toFixed(2)}, ${data.coord.lon.toFixed(2)}`;
+            document.getElementById('weather-icon').src = `/img/weathericons/${data.icon}`;
+
+            resultDiv.style.display = 'block';
+            gsap.from(resultDiv, { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" });
+          }
+        } catch (error) {
+          alert('Connection error. Please try again.');
+          initialView.style.display = 'block';
+        } finally {
+          loader.style.display = 'none';
         }
       }
     </script>
-  </body>
+
+    <%- include('partials/footer') %>
+</body>
+
 </html>

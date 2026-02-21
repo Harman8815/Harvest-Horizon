@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+        <style>
+            .error-container {
+                min-height: 80vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: var(--space-3xl) 0;
+                background: radial-gradient(circle at center, #fff, #f8f9fa);
+            }
+
+            .error-card {
+                max-width: 600px;
+                width: 100%;
+                text-align: center;
+                padding: var(--space-3xl);
+                border-radius: var(--radius-xl);
+                background: white;
+                box-shadow: var(--shadow-lg);
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                animation: slideUp 0.6s ease-out;
+            }
+
+            .error-icon {
+                font-size: 5rem;
+                margin-bottom: var(--space-xl);
+                display: inline-block;
+                background: #fff5f5;
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                border-radius: 50%;
+                color: #e53e3e;
+            }
+
+            @keyframes slideUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .details-box {
+                background: #f7fafc;
+                padding: var(--space-md);
+                border-radius: var(--radius-md);
+                font-family: monospace;
+                font-size: 0.9rem;
+                color: #4a5568;
+                margin: var(--space-xl) 0;
+                text-align: left;
+                border-left: 4px solid #cbd5e0;
+                word-break: break-all;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+        <div class="error-container">
+            <div class="container d-flex justify-content-center">
+                <div class="error-card">
+                    <div class="error-icon">⚠️</div>
+                    <h1 class="display-5 font-bold mb-3" style="color: var(--primary-dark);">Prediction Interrupted</h1>
+                    <p class="text-muted lead">We encountered a technical hurdle while analyzing your agricultural data.
+                        This usually happens when the satellite connection is unstable or the analytical model is busy.
+                    </p>
+
+                    <% if (locals.errorDetails) { %>
+                        <div class="details-box">
+                            <strong>Technical Log:</strong><br>
+                            <%= errorDetails %>
+                        </div>
+                        <% } %>
+
+                            <div class="d-flex justify-content-center mt-5" style="gap: 16px;">
+                                <a href="javascript:history.back()" class="btn btn-outline"
+                                    style="padding: 12px 30px;">← Go Back</a>
+                                <a href="/profile" class="btn btn-primary" style="padding: 12px 30px;">Return to
+                                    Dashboard</a>
+                            </div>
+
+                            <p class="mt-4 small text-muted">If this persists, please try again in a few minutes or
+                                contact support.</p>
+                </div>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>
